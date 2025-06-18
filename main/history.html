@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d`Alba GLOBAL</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../_img/common/favicon.png" />
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="d`Alba GLOBAL" />
+    <meta property="og:description" content="d`Alba GLOBAL" />
+    <meta property="og:image" content="../_img/common/opengraph.png" />
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- NiceSelect -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fullpage -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" />
+
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../_css/reset.css" />
+    <link rel="stylesheet" href="../_css/setting.css" />
+    <link rel="stylesheet" href="../_css/common.css" />
+    <link rel="stylesheet" href="../_css/sub.css" />
+    <link rel="stylesheet" href="../_css/attribute.css" />
+    <link rel="stylesheet" href="../_css/subpage.css" />
+    <script src="../_js/common.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header class="header white">
+        <div class="header__inner">
+          <button type="button" class="ham_btn"></button>
+          <a href="../index.php" class="logo">
+            <img src="../_img/common/logo.svg" alt="" />
+          </a>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li class="menu_first menu_depth">
+              Who we are
+              <ul class="sub_menu">
+                <li><a href="../whoweare/heritage.html">HERITAGE</a></li>
+                <li><a href="../whoweare/campaigns.html">CAMPAIGNS</a></li>
+                <li><a href="../whoweare/brands.html">BRANDS</a></li>
+                <li><a href="../whoweare/Innovations.html">INNOVATIONS</a></li>
+                <li><a href="../whoweare/achievements.html">ACHIEVEMENTS</a></li>
+              </ul>
+            </li>
+            <li><a href="./history.html">History</a></li>
+            <li class="menu_depth">
+              Investors
+              <ul class="sub_menu">
+                <li><a href="./ir_material.html">IR Material</a></li>
+                <li><a href="./announcements.html">Announcements</a></li>
+              </ul>
+            </li>
+            <li><a href="./ESG.html">ESG</a></li>
+            <li><a href="./newsroom.html">Newsroom</a></li>
+            <li><a href="./Shareholders_Club.html">Shareholders</a>' Club</li>
+          </ul>
+          <div class="global">
+            <button type="button" class="global_btn">
+              <span>KOR</span>
+              <p></p>
+            </button>
+            <ul class="global_ul">
+              <li class="on">KOR</li>
+              <li>ENG</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!--  헤더 햄버거 버튼 눌렀을 때 나오는 사이드바 -->
+      <div class="pc_sidebar">
+        <div class="pc_sidebar__inner">
+          <div class="pc_sidebar__header"><button type="button" class="x_btn"></button></div>
+          <nav class="p_sidebar">
+            <div class="global_mo">
+              <button type="button" class="global_btn_mo">
+                KOR
+                <p></p>
+              </button>
+              <ul class="global_ul_mo">
+                <li class="on">KOR</li>
+                <li>ENG</li>
+              </ul>
+            </div>
+            <ul class="sidebar_ul">
+              <li><a href="/">Home</a></li>
+              <li>
+                <button class="btn-lnb whoweare">
+                  Who we are
+                  <p></p>
+                </button>
+                <ul class="lnb__list">
+                  <li><a href="../whoweare/heritage.html">HERITAGE</a></li>
+                  <li><a href="../whoweare/campaigns.html">CAMPAIGNS</a></li>
+                  <li><a href="../whoweare/brands.html">BRANDS</a></li>
+                  <li><a href="../whoweare/Innovations.html">INNOVATIONS</a></li>
+                  <li><a href="../whoweare/achievements.html">ACHIEVEMENTS</a></li>
+                </ul>
+              </li>
+              <li><a href="./history.html">History</a></li>
+              <li>
+                <button class="btn-lnb">
+                  Investors
+                  <p></p>
+                </button>
+                <ul class="lnb__list">
+                  <li><a href="./ir_material.html">IR Material</a></li>
+                  <li><a href="./announcements.html">Announcements</a></li>
+                </ul>
+              </li>
+              <li><a href="./ESG.html">ESG</a></li>
+              <li><a href="./newsroom.html">Newsroom</a></li>
+              <li><a href="./Shareholders_Club.html">Shareholders' Club</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main class="main">
+        <div class="section_2 his_section">
+          <!-- pc-history start -->
+          <div class="history_inner">
+            <h1>History</h1>
+            <div class="history_cont">
+              <div class="item">
+                <h3>2024</h3>
+                <button type="button" class="one active"></button>
+                <div class="time_line active">
+                  <div class="year">
+                    <h4>12월</h4>
+                    <ul>
+                      <li>수출 1억불 달성(누적 2200억원)</li>
+                      <li>일본 립스 2024 베스트 코스메 1위</li>
+                      <li>일본 아마존/앳코스메 미스트 카테고리 1위</li>
+                      <li>베트남 쇼피 스킨케어 카테고리 Top 3</li>
+                      <li>독일/스페인 아마존 Sunscreens 카테고리 1위</li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>2H</h4>
+                    <ul>
+                      <li>미스트 세럼 누적 판매 4,000만개 달성</li>
+                      <li>선크림 누적 판매 1,000만개 달성</li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>7월</h4>
+                    <ul>
+                      <li>
+                        미국/캐나다/독일/스페인/호주/영국 아마존<br />
+                        미스트 세럼 Face Mist 카테고리 1위
+                      </li>
+                      <li>
+                        일본 큐텐 미스트 카테고리,<br />
+                        선크림 UV 케어 카테고리 1위
+                      </li>
+                      <li>
+                        일본 라쿠텐 세럼 토너 스킨케어 카테고리 1위,<br />
+                        모델링 마스크 카테고리 1위
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>6월</h4>
+                    <ul>
+                      <li>
+                        올영세일 스킨케어 1위<br />
+                        (화이트 트러플 퍼스트 스프레이 세럼)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>1H</h4>
+                    <ul>
+                      <li>네이버 뷰티 전체 카테고리 내 거래액 1위</li>
+                      <li>
+                        쿠팡 에센스 부분 베스트 제품 수상<br />
+                        (화이트 트러플 수프림 세럼)
+                      </li>
+                      <li>
+                        올리브영 스킨케어 전체 제품 판매량 Top 3<br />
+                        (화이트 트러플 퍼스트 스프레이 세럼)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <h3>2023</h3>
+                <button type="button" class="one"></button>
+                <div class="time_line">
+                  <div class="year">
+                    <h4>12월</h4>
+                    <ul>
+                      <li>미스트 세럼 누적 판매 3,000만개 달성</li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>1월</h4>
+                    <ul>
+                      <li>쿠팡 선케어/에센스/앰플 카테고리 1위</li>
+                    </ul>
+                  </div>
+                  <div class="year">
+                    <h4>1월</h4>
+                    <ul>
+                      <li>미스트 세럼 누적 판매 2,000만개 달성</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <h3>2022</h3>
+                <button type="button" class="one"></button>
+                <div class="time_line">
+                  <div class="year">
+                    <h4>3월</h4>
+                    <ul>
+                      <li>러시아 최대 e-commerce 와일드베리 세럼 카테고리 1위</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <h3>2021</h3>
+                <button type="button" class="one"></button>
+                <div class="time_line">
+                  <div class="year">
+                    <h4>12월</h4>
+                    <ul>
+                      <li>미스트 세럼 누적 판매 1,000만개 달성</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pc-history end -->
+          <!-- mo-history start -->
+          <div class="mo_his_inner history">
+            <div class="cont">
+              <h1>History</h1>
+              <ul class="year_btn">
+                <li><a href="#tab01">2024</a></li>
+                <li><a href="#tab02">2023</a></li>
+                <li><a href="#tab03">2022</a></li>
+                <li><a href="#tab04">2021</a></li>
+              </ul>
+              <div class="tabcontent">
+                <div id="tab01" class="year_detail">
+                  <div class="item">
+                    <h3>12월</h3>
+                    <ol>
+                      <li>수출 1억불 달성(누적 2200억원)</li>
+                      <li>일본 립스 2024 베스트 코스메 1위</li>
+                      <li>일본 아마존/앳코스메 미스트 카테고리 1위</li>
+                      <li>베트남 쇼피 스킨케어 카테고리 Top 3</li>
+                      <li>독일/스페인 아마존 Sunscreens 카테고리 1위</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>2H</h3>
+                    <ol>
+                      <li>미스트 세럼 누적 판매 4,000만개 달성</li>
+                      <li>선크림 누적 판매 1,000만개 달성</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>7월</h3>
+                    <ol>
+                      <li>미국/캐나다/독일/스페인/호주/영국 아마존 <br />미스트 세럼 Face Mist 카테고리 1위</li>
+                      <li>일본 큐텐 미스트 카테고리, 선크림 UV 케어 <br />카테고리 1위</li>
+                      <li>일본 라쿠텐 세럼 토너 스킨케어 카테고리 1위, <br />모델링 마스크 카테고리 1위</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>6월</h3>
+                    <ol>
+                      <li>올영세일 스킨케어 1위 <br />(화이트 트러플 퍼스트 스프레이 세럼)</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>1H</h3>
+                    <ol>
+                      <li>네이버 뷰티 전체 카테고리 내 거래액 1위</li>
+                      <li>쿠팡 에센스 부분 베스트 제품 수상 <br />(화이트 트러플 수프림 세럼)</li>
+                      <li>올리브영 스킨케어 전체 제품 판매량 Top 3 <br />(화이트 트러플 퍼스트 스프레이 세럼)</li>
+                    </ol>
+                  </div>
+                </div>
+                <div id="tab02" class="year_detail">
+                  <div class="item">
+                    <h3>12월</h3>
+                    <ol>
+                      <li>미스트 세럼 누적 판매 3,000만개 달성</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>1월</h3>
+                    <ol>
+                      <li>쿠팡 선케어/에센스/앰플 카테고리 1위</li>
+                    </ol>
+                  </div>
+                  <div class="item">
+                    <h3>1월</h3>
+                    <ol>
+                      <li>미스트 세럼 누적 판매 2,000만개 달성</li>
+                    </ol>
+                  </div>
+                </div>
+                <div id="tab03" class="year_detail">
+                  <div class="item">
+                    <h3>3월</h3>
+                    <ol>
+                      <li>러시아 최대 e-commerce 와일드베리 세럼 카테고리 1위</li>
+                    </ol>
+                  </div>
+                </div>
+                <div id="tab04" class="year_detail">
+                  <div class="item">
+                    <h3>12월</h3>
+                    <ol>
+                      <li>미스트 세럼 누적 판매 1,000만개 달성</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mo-history end -->
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer_logo"><img src="../_img/common/logo_footer.svg" alt="" /></div>
+          <p>
+            주식회사 달바글로벌 서울특별시 마포구 마포대로 78, 12층<br class="mo_show" />
+            (도화동, 자람빌딩) (04031)<br />
+            CEO 반성연. Hosting by NHN Commerce Tel 02-332-7727.<br class="mo_show" /> Email dalba@dalba.com Information manager 유명한<br />
+            Business Registeration No. 840-88-00333. <br class="mo_show" />Online Sales Reg No. 제 2016-서울마포-0721호<br />
+            © Bmonument.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프로젝트명</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./_img/common/favicon.png" />
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="달바" />
+    <meta property="og:description" content="달바" />
+    <meta property="og:image" content="./_img/common/opengraph.png" />
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- NiceSelect -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="./_css/reset.css" />
+    <link rel="stylesheet" href="./_css/setting.css" />
+    <link rel="stylesheet" href="./_css/common.css" />
+    <link rel="stylesheet" href="./_css/sub.css" />
+    <link rel="stylesheet" href="./_css/attribute.css" />
+    <script src="./_js/common.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header class="header">
+        <div class="header__inner">
+          <button type="button" class="ham_btn"></button>
+          <div class="logo">
+            <img src="./_img/common/logo.svg" alt="" />
+          </div>
+          <div class="global">
+            <button type="button" class="global_btn"></button>
+            <ul class="global_ul">
+              <li class="on">KO</li>
+              <li>EN</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!--  헤더 햄버거 버튼 눌렀을 때 나오는 사이드바 -->
+      <div class="pc_sidebar">
+        <div class="pc_sidebar__inner">
+          <div class="pc_sidebar__header"><button type="button" class="x_btn"></button></div>
+          <nav class="p_sidebar">
+            <ul class="sidebar_ul">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#history">History</a></li>
+              <li><a href="#career">Career</a></li>
+              <li>
+                <button class="btn-lnb">Investors</button>
+                <ul class="lnb__list">
+                  <li><a href="#IR_Material">IR Material</a></li>
+                  <li><a href="#Announcements">Announcements</a></li>
+                </ul>
+              </li>
+              <li><a href="#Newsroom">Newsroom</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main class="main">
+        <div class="section_1">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide01 home" id="home">
+                <div class="video_main">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source type="video/mp4" src="./_img/common/main_video.mp4" />
+                  </video>
+                </div>
+                <div class="text">
+                  <h1>
+                    Global No.1 <br class="mo_show" />Pioneer of the<br />
+                    Premium Beauty Lifestyle
+                  </h1>
+                </div>
+              </div>
+              <div class="swiper-slide slide02 mission" id="mission">
+                <div class="video_2">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source type="video/mp4" src="./_img/common/Mission_white.mp4" />
+                  </video>
+                </div>
+                <div class="text">
+                  <h2>Mission</h2>
+                  <p>
+                    고객 라이프스타일 영역에서<br class="pc_show" />
+                    진정한 프리미엄의 가치를 제공하는 것이 회사의 사명으로,<br />
+                    전 세계 고객들에게 끊임없이 색다른 시도와 도전을 통해<br class="pc_show" />
+                    새로운 뷰티 패러다임을 제시하는 것을 목표로 합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide slide03 history" id="history">
+                <!-- pc-history start -->
+                <div class="history_inner">
+                  <div class="cont">
+                    <h1>History</h1>
+                    <div class="box">
+                      <div class="year_box">
+                        <div class="year on">
+                          <h4>2024</h4>
+                          <button type="button" class="one"></button>
+                        </div>
+                        <div class="year">
+                          <h4>2023</h4>
+                          <button type="button" class="one"></button>
+                        </div>
+                        <div class="year">
+                          <h4>2022</h4>
+                          <button type="button" class="one"></button>
+                        </div>
+                        <div class="year">
+                          <h4>2021</h4>
+                          <button type="button" class="one"></button>
+                        </div>
+                      </div>
+                      <div class="detail 2024">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>수출 1억불 달성(누적 2200억원)</li>
+                            <li>일본 립스 2024 베스트 코스메 1위</li>
+                            <li>일본 아마존/앳코스메 미스트 카테고리 1위</li>
+                            <li>베트남 쇼피 스킨케어 카테고리 Top 3</li>
+                            <li>독일/스페인 아마존 Sunscreens 카테고리 1위</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>2H</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 4,000만개 달성</li>
+                            <li>선크림 누적 판매 1,000만개 달성</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>7월</h3>
+                          <ol>
+                            <li>
+                              미국/캐나다/독일/스페인/호주/영국 아마존 미스트 세럼<br />
+                              Face Mist 카테고리 1위
+                            </li>
+                            <li>일본 큐텐 미스트 카테고리, 선크림 UV 케어 카테고리 1위</li>
+                            <li>
+                              일본 라쿠텐 세럼 토너 스킨케어 카테고리 1위,<br />
+                              모델링 마스크 카테고리 1위
+                            </li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>6월</h3>
+                          <ol>
+                            <li>올영세일 스킨케어 1위 (화이트 트러플 퍼스트 스프레이 세럼)</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1H</h3>
+                          <ol>
+                            <li>네이버 뷰티 전체 카테고리 내 거래액 1위</li>
+                            <li>
+                              쿠팡 에센스 부분 베스트 제품 수상<br />
+                              (화이트 트러플 수프림 세럼)
+                            </li>
+                            <li>
+                              올리브영 스킨케어 전체 제품 판매량 Top 3<br />
+                              (화이트 트러플 퍼스트 스프레이 세럼)
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="detail 2023">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 3,000만개 달성</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1월</h3>
+                          <ol>
+                            <li>쿠팡 선케어/에센스/앰플 카테고리 1위</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 2,000만개 달성</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="detail 2022">
+                        <div class="item">
+                          <h3>3월</h3>
+                          <ol>
+                            <li>러시아 최대 e-commerce 와일드베리 세럼 카테고리 1위</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="detail 2021">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 1,000만개 달성</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- pc-history end -->
+                <!-- mo-history start -->
+                <div class="mo_his_inner history">
+                  <div class="cont">
+                    <h1>History</h1>
+                    <ul class="year_btn">
+                      <li><a href="#tab01">2024</a></li>
+                      <li><a href="#tab02">2023</a></li>
+                      <li><a href="#tab03">2022</a></li>
+                      <li><a href="#tab04">2021</a></li>
+                    </ul>
+                    <div class="tabcontent">
+                      <div id="tab01" class="year_detail">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>수출 1억불 달성(누적 2200억원)</li>
+                            <li>일본 립스 2024 베스트 코스메 1위</li>
+                            <li>일본 아마존/앳코스메 미스트 카테고리 1위</li>
+                            <li>베트남 쇼피 스킨케어 카테고리 Top 3</li>
+                            <li>독일/스페인 아마존 Sunscreens 카테고리 1위</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>2H</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 4,000만개 달성</li>
+                            <li>선크림 누적 판매 1,000만개 달성</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>7월</h3>
+                          <ol>
+                            <li>미국/캐나다/독일/스페인/호주/영국 아마존 미스트 세럼 Face Mist 카테고리 1위</li>
+                            <li>일본 큐텐 미스트 카테고리, 선크림 UV 케어 카테고리 1위</li>
+                            <li>일본 라쿠텐 세럼 토너 스킨케어 카테고리 1위, 모델링 마스크 카테고리 1위</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>6월</h3>
+                          <ol>
+                            <li>올영세일 스킨케어 1위 (화이트 트러플 퍼스트 스프레이 세럼)</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1H</h3>
+                          <ol>
+                            <li>네이버 뷰티 전체 카테고리 내 거래액 1위</li>
+                            <li>쿠팡 에센스 부분 베스트 제품 수상 (화이트 트러플 수프림 세럼)</li>
+                            <li>올리브영 스킨케어 전체 제품 판매량 Top 3 (화이트 트러플 퍼스트 스프레이 세럼)</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div id="tab02" class="year_detail">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 3,000만개 달성</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1월</h3>
+                          <ol>
+                            <li>쿠팡 선케어/에센스/앰플 카테고리 1위</li>
+                          </ol>
+                        </div>
+                        <div class="item">
+                          <h3>1월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 2,000만개 달성</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div id="tab03" class="year_detail">
+                        <div class="item">
+                          <h3>3월</h3>
+                          <ol>
+                            <li>러시아 최대 e-commerce 와일드베리 세럼 카테고리 1위</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div id="tab04" class="year_detail">
+                        <div class="item">
+                          <h3>12월</h3>
+                          <ol>
+                            <li>미스트 세럼 누적 판매 1,000만개 달성</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- mo-history end -->
+              </div>
+              <div class="swiper-slide slide04 career" id="career">
+                <div class="video_2">
+                  <video class="video" autoplay muted playsinline loop>
+                    <source type="video/mp4" src="./_img/common/Career2.mp4" />
+                  </video>
+                </div>
+                <div class="text">
+                  <h2>Career</h2>
+                  <p>
+                    달바글로벌과 함께 글로벌 프리미엄 뷰티의<br class="mo_show" />
+                    새로운 기준을 제시할 분을 찾습니다.<br />
+                    달바의 성공 DNA를 기반으로 회사와 커리어의 동반 성장을 실현하는 여정에 합류하세요.
+                  </p>
+                  <a href="https://dalba.career.greetinghr.com/dalbaglobal" target="_blank"
+                    >채용 확인하기
+                    <p></p
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-page">
+          <div class="section_2 IR_Material" id="IR_Material">
+            <div class="ir_inner">
+              <h1>IR Material</h1>
+              <div class="radio-btns">
+                <label for="All" class="radio--typeA"><input type="radio" name="ir" id="All" checked /><em>All</em></label>
+                <label for="Results" class="radio--typeA"><input type="radio" name="ir" id="Results" /><em>Results</em></label>
+                <label for="Presentations" class="radio--typeA"><input type="radio" name="ir" id="Presentations" /><em>Presentations</em></label>
+                <label for="Others" class="radio--typeA"><input type="radio" name="ir" id="Others" /><em>Others</em></label>
+              </div>
+              <ul class="ir_ul">
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="btn">더보기</button>
+            </div>
+          </div>
+          <div class="section_2 Announcements" id="Announcements">
+            <div class="ir_inner">
+              <h1>Announcements</h1>
+              <div class="select_box">
+                <select name="" id="" class="nice-select select-primary">
+                  <option value="">2025</option>
+                  <option value="">2024</option>
+                  <option value="">2023</option>
+                </select>
+              </div>
+              <ul class="ir_ul">
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="title">
+                    <h2>IR MaterialIR MaterialIR MateriddIR MaterialIR MaterialIR Materidd</h2>
+                    <span>0000.00</span>
+                  </div>
+                  <div class="content">
+                    <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                    <button type="button" class="plus"></button>
+                  </div>
+                  <div class="file">
+                    <div class="file_box">
+                      <span>첨부파일</span>
+                      <div class="item"><button type="button">제목.jpg</button><button type="button">제목.jpg</button><button type="button">제목이들어가는자리.jpg</button></div>
+                    </div>
+                    <a href="#" class="link_go">링크 바로가기</a>
+                  </div>
+                </li>
+              </ul>
+              <button type="button" class="btn">더보기</button>
+            </div>
+          </div>
+          <div class="section_2 Newsroom" id="Newsroom">
+            <div class="ir_inner">
+              <h1>Newsroom</h1>
+              <div class="radio-btns news">
+                <label for="All" class="radio--typeA"><input type="radio" name="news" id="All" checked /><em>All</em></label>
+                <label for="Corp" class="radio--typeA"><input type="radio" name="news" id="Corp" /><em>Corp</em></label>
+                <label for="Brand" class="radio--typeA"><input type="radio" name="news" id="Brand" /><em>Brand</em></label>
+                <label for="Blog" class="radio--typeA"><input type="radio" name="news" id="Blog" /><em>Blog</em></label>
+                <label for="Career" class="radio--typeA"><input type="radio" name="news" id="Career" /><em>Career</em></label>
+                <label for="new-Others" class="radio--typeA"><input type="radio" name="news" id="new-Others" /><em>Others</em></label>
+              </div>
+              <ul class="ir_ul news_ul">
+                <li>
+                  <a href="#">
+                    <div class="title">
+                      <h2>IR Material</h2>
+                      <span>0000.00</span>
+                    </div>
+                    <div class="content">
+                      <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                      <span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="title">
+                      <h2>IR Material</h2>
+                      <span>0000.00</span>
+                    </div>
+                    <div class="content">
+                      <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                      <span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="title">
+                      <h2>IR Material</h2>
+                      <span>0000.00</span>
+                    </div>
+                    <div class="content">
+                      <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                      <span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="title">
+                      <h2>IR Material</h2>
+                      <span>0000.00</span>
+                    </div>
+                    <div class="content">
+                      <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                      <span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="title">
+                      <h2>IR Material</h2>
+                      <span>0000.00</span>
+                    </div>
+                    <div class="content">
+                      <p>‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’‘국내 인디브랜드 매출 TOP’ 달바, 한국 1위 찍고 글로벌로...해외매출 전년비 210% ‘쑥’</p>
+                      <span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <button type="button" class="btn">더보기</button>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__inner">
+              <div class="footer_logo"><img src="./_img/common/logo_footer.svg" alt="" /></div>
+              <p>
+                주식회사 달바글로벌 서울특별시 마포구 마포대로 78, 12층<br class="mo_show" />
+                (도화동, 자람빌딩) (04031)<br />
+                CEO 반성연. Hosting by NHN Commerce Tel 02-332-7727.<br class="mo_show" /> Email dalba@dalba.com Information manager 유명한<br />
+                Business Registeration No. 840-88-00333. <br class="mo_show" />Online Sales Reg No. 제 2016-서울마포-0721호<br />
+                © Bmonument.
+              </p>
+            </div>
+          </footer>
+        </div>
+        <a href="#" class="btn_gotop">
+          <span></span>
+          <p>TOP</p>
+        </a>
+      </main>
+      <!-- <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer_logo"><img src="./_img/common/logo_footer.svg" alt="" /></div>
+          <p>
+            주식회사 달바글로벌 서울특별시 마포구 마포대로 78, 12층<br class="mo_show" />
+            (도화동, 자람빌딩) (04031)<br />
+            CEO 반성연. Hosting by NHN Commerce Tel 02-332-7727.<br class="mo_show" /> Email dalba@dalba.com Information manager 유명한<br />
+            Business Registeration No. 840-88-00333. <br class="mo_show" />Online Sales Reg No. 제 2016-서울마포-0721호<br />
+            © Bmonument.
+          </p>
+        </div>
+      </footer> -->
+    </div>
+  </body>
+</html>

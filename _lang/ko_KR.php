@@ -1,0 +1,59 @@
+<?php
+$main_mission = '고객 라이프스타일 영역에서
+              진정한 프리미엄의 가치를 제공하는 것이 회사의 사명으로,
+              전 세계 고객들에게 끊임없이 색다른 시도와 도전을 통해
+              새로운 뷰티 패러다임을 제시하는 것을 목표로 합니다.';
+$Career_text = '달바글로벌과 함께 글로벌 프리미엄 뷰티의
+새로운 기준을 제시할 분을 찾습니다.
+달바의 성공 DNA를 기반으로 회사와 커리어의 동반 성장을 실현하는 여정에 합류하세요.';
+$Career_button = '채용 확인하기';
+
+$Piedmont_text = '화이트 트러플의 산지로 알려진 청정지역,<br />이탈리아 Piedmont 주 Alba 지역에서<br class="mo_show" />
+          영감을 받아 탄생한 d’Alba';
+$Truffle_text_b = '땅 속의 다이아몬드 화이트 트러플';
+$Truffle_text_p = ' d’Alba는 항산화 성분이 풍부한 피에몬테 주의<br class="mo_show" />
+          화이트 트러플을 핵심 원료로 선택했습니다.<br />
+          달바만의 특허 성분 Trufferrol™과<br class="mo_show" />
+          3CMTE공법을 통해 놀라운 변화를 경험해 보세요.';
+$Skincare_Brand='화이트 트러플을 핵심 원료로 한<br />
+            프리미엄 비건 스킨케어 브랜드';
+$Beauty_Brand = '한국 최초로 원료 부분 대상인 그랑프리를 수상한<br />
+            프리미엄 원료를 기반으로 한 이너 뷰티 브랜드';
+$Fine_Dining = ' 화이트 트러플의 최고 산지<br />
+            피에몬테 주 알바 지역을 모티브로 서비스 중인,<br />
+            한남동에 위치한 파인 다이닝';
+$Spray_Serum_span = '세럼을 스프레이 하다';
+$Spray_Serum_p = '토너, 에센스, 세럼, 메이크업 픽서 제품을 미스트 하나로 4-in-1';
+$Tone_up_Sunscreen_span = '선크림을 새롭게 정의하다';
+$Tone_up_Sunscreen_p = '바르는 순간 수분감 넘치는 촉촉함<br />
+              피부 본연의 빛처럼 자연스러운<br class="mo_show" />
+              ‘핑크빛 물광’ 톤업 메이크업 효과';
+$Double_Serum_span = '나만의 DIY 스킨 솔루션';
+$Double_Serum_p = '세럼과 크림을 하나로,<br class="mo_show" />
+내 피부 컨디션 별 커스텀 케어';
+$Accumulated='누적 매출';
+$Accumulated_Overs='누적 수출';
+$Spray_Serums_Total='스프레이 세럼 누적 판매 수';
+$Sales_CAGR='연간 매출 성장률';
+$million ='억 원';
+$million_b ='억원';
+$M_units = '만개';
+$Environment_b = '지구를 위한 동행';
+$Environment_p = '당사는 이탈리아 V-Lable 비건 인증, FSC 친산림 인증을 완료한 포장패키지 적용 등<br class="pc_show">
+                       지구환경을 위한 지속가능한 뷰티브랜드를 만들어 가고 있습니다.';
+$Social_b='함께 하고 싶은 기업, 일하기 좋은 기업';
+$Social_p='한부모 및 미혼모 가정을 위한  \'슈퍼우먼 키트\', 새생명복지재단 기초화장품 10,000개 지원,<br class="pc_show">
+                        직원 심리상담 및 인권고충해결프로세스 운영, 높은 정규직 비율(약 90%),<br class="pc_show">
+                        3년 산업재해율 0% 유지 등 사회적 책임과 동반자 의식을 바탕으로 한<br class="pc_show">
+                        노력들을 이어 가고 있습니다.';
+$Governance_b ='자본시장과의 건강한 동행';
+$Governance_p='업계 최초의 주주 할인제도 운영, 동종사 평균 이상의 배당 정책 수행,<br class="pc_show">
+                         투명경영위원회 운영, 윤리경영 활동을 통하여 기업가치 극대화를 추구합니다.';
+$Shareholders_span = '달바글로벌의 보은, 주주만을 위한 특별한 혜택';
+$Shareholders_p ='달바는 주주분들과의 동행을 소중한 인연으로 생각합니다.<br />
+        자사 제품들을 최고의 주주 할인가에 구매하실 수 있는 특별한 혜택을 제공하며, <br class="pc_show" />
+        보유한 주식 수와 기간에 따라 더욱 강력해지는 혜택을 꾸준히 경험해 보시기 바랍니다.';
+$Shareholders_h4 ='* 25년 5월 22일부터 주요 증권사 거래 앱(MTS)에서 주주 할인가 구매 서비스 제공,<br>
+25년 하반기 주주전용몰 오픈 예정';
+$more = '더보기';
+?>

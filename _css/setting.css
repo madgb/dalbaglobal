@@ -1,0 +1,264 @@
+@charset "UTF-8";
+:root {
+  /* color */
+  --brand_color: #fd0;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-main: #000000;
+  --color-sub: #000000;
+  --header-height: 72px;
+  /* text-color */
+  --main-font-color: #111111;
+
+  /* box shadow */
+  --box-shadow1: 6px 3px 5px #00000008;
+
+  /* breakpoint */
+  --breakpoint-mo: 768px;
+
+  /* Font */
+  --primary-font: "FreightNeo_Pro";
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.btn-mini {
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-sm {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.btn-md {
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-lg {
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-big {
+  height: 56px;
+  line-height: 56px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-w100p {
+  width: 100%;
+}
+
+.btn-textType {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--info_text);
+}
+
+.btn_p16 {
+  padding: 0 16px;
+}
+
+.btn.disabled {
+  background-color: var(--bg_light);
+  color: var(--disabled);
+  border: 1px solid var(--line_color);
+}
+
+.btn:disabled {
+  background-color: var(--bg_light) !important;
+  color: var(--disabled) !important;
+  border: 1px solid var(--line_color) !important;
+}
+
+/* #### Modal #### */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0;
+}
+
+.modal.open {
+  z-index: 1000;
+  opacity: 1;
+}
+
+.modal__inner {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: var(--white);
+  transition: 0.45s;
+  opacity: 0;
+}
+
+.modal.open .modal__inner {
+  top: 50%;
+  opacity: 1;
+}
+
+.modal__inner::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.modal__inner::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #dddddd;
+  border-radius: 10px;
+}
+
+.modal__inner::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 20px;
+}
+
+/* Form */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999999;
+}
+
+/* Select */
+.select-primary {
+  height: 48px;
+  line-height: 48px;
+  float: none;
+  width: 160px;
+  display: inline-block;
+  background: #fafafa;
+  border-radius: 8px;
+  border: none;
+  color: #767676;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.select-primary span,
+.select-primary .list li {
+  font-family: "Pretendard";
+}
+.nice-select .option.focus {
+  background: #fff;
+}
+.select-primary .list {
+  max-height: 190px;
+  overflow-y: auto;
+  z-index: 1000;
+  width: inherit;
+}
+
+.select-primary:active,
+.select-primary.open,
+.select-primary:focus {
+  border-color: #ddd;
+}
+
+.select-primary .option {
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  line-height: 40px;
+}
+
+.select-primary .option:last-child {
+  border-bottom: none;
+}
+
+.select-primary .option.selected {
+  font-weight: normal;
+}
+
+.select-primary:after {
+  border-bottom: none;
+  border-right: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(/_img/common/icon_arrow_bottom.svg) no-repeat center center / contain;
+  transform: translateY(-50%) rotate(0deg);
+  margin-top: 0;
+  right: 15px;
+}
+
+.select-primary.open:after {
+  transform: translateY(-50%) rotate(-180deg);
+  transform-origin: center !important;
+}
+
+/* radio-A */
+/* radio-typeA */
+.radio--typeA input[type="radio"] {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+}
+.radio--typeA input[type="radio"] + em {
+  padding: 0 24px;
+  border-radius: 500px;
+  background: #fafafa;
+  color: #999;
+  font-family: "Pretendard";
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 500px;
+  display: flex;
+  flex-shrink: 0;
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  font-style: normal;
+  cursor: pointer;
+}
+.radio--typeA input[type="radio"]:checked + em {
+  border-radius: 500px;
+  background: #fd0;
+  color: #fff;
+}
