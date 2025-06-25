@@ -1011,6 +1011,17 @@ span.gray_badge {
 .Newsroom .title_box {
   margin-bottom: 48px;
 }
+header {
+  transition: top 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header.hidden {
+  top: -100px; /* 헤더 높이만큼 위로 숨김 */
+}
 /* Pad & Mobile */
 @media screen and (max-width: 1200px) {
   #fullpage {
