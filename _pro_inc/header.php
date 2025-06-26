@@ -66,31 +66,50 @@
             <li class="<?= $current_page == '/' ? 'active' : '' ?>"><a href="/">Home</a></li>
             <li class="menu_first menu_depth <?= strpos($current_page, '/whoweare/') !== false ? 'active' : '' ?>">Who we are
             <ul class="sub_menu">
-                <li class="<?= $current_page == '/whoweare/heritage.php' ? 'active' : '' ?>"><a href="/whoweare/heritage.php">HERITAGE</a></li>
+                <li><a href="#" data-target="section_02">HERITAGE</a></li>
+                <li><a href="#" data-target="section_05">CAMPAIGNS</a></li>
+                <li><a href="#" data-target="section_07">BRANDS</a></li>
+                <li><a href="#" data-target="section_08">INNOVATIONS</a></li>
+
+                <!-- 구버전 링크(페이지 이동) -->
+                
+                <!-- <li class="<?= $current_page == '/whoweare/heritage.php' ? 'active' : '' ?>"><a href="/whoweare/heritage.php">HERITAGE</a></li>
                 <li class="<?= $current_page == '/whoweare/campaigns.php' ? 'active' : '' ?>"><a href="/whoweare/campaigns.php">CAMPAIGNS</a></li>
                 <li class="<?= $current_page == '/whoweare/brands.php' ? 'active' : '' ?>"><a href="/whoweare/brands.php">BRANDS</a></li>
-                <li class="<?= $current_page == '/whoweare/Innovations.php' ? 'active' : '' ?>"><a href="/whoweare/Innovations.php">INNOVATIONS</a></li>
-                <li class="<?= $current_page == '/whoweare/achievements.php' ? 'active' : '' ?>"><a href="/whoweare/achievements.php">ACHIEVEMENTS</a></li> 
+                <li class="<?= $current_page == '/whoweare/Innovations.php' ? 'active' : '' ?>"><a href="/whoweare/Innovations.php">INNOVATIONS</a></li> -->
+
+                <!-- Achievement는 개편 전까지 숨기기 -->
+                <!-- <li class="<?= $current_page == '/whoweare/achievements.php' ? 'active' : '' ?>"><a href="/whoweare/achievements.php">ACHIEVEMENTS</a></li>  -->
               </ul>
             </li>
-            <li class="<?= $current_page == '/main/history.php' ? 'active' : '' ?>"><a href="/main/history.php">History</a></li>
+            <li><a href="#" data-target="section_13">History</a></li>
+            <!-- <li class="<?= $current_page == '/main/history.php' ? 'active' : '' ?>"><a href="/main/history.php">History</a></li> -->
             <li class="menu_depth <?= (strpos($current_page, '/main/ir_material') !== false || strpos($current_page, '/main/announcements') !== false) ? 'active' : '' ?>">Investors
               <ul class="sub_menu">
-                <li><a href="/main/ir_material.php">IR Material</a></li>
-                <li><a href="/main/announcements.php">Announcements</a></li>
+                <li><a href="#" data-target="section_14">IR Material</a></li>
+                <li><a href="#" data-target="section_15">Announcements</a></li>
+
+                <!-- <li><a href="/main/ir_material.php">IR Material</a></li>
+                <li><a href="/main/announcements.php">Announcements</a></li> -->
               </ul>
             </li>
-            <li class="<?= $current_page == '/main/ESG.php' ? 'active' : '' ?>"><a href="/main/ESG.php">ESG</a></li>
+
+            <li><a href="#" data-target="section_16">ESG</a></li>
+            <li><a href="#" data-target="section_19">Newsroom</a></li>
+
+            <!-- <li><a href="#" data-target="section_15">Shareholders' Club</a></li> -->
+
+            <!-- <li class="<?= $current_page == '/main/ESG.php' ? 'active' : '' ?>"><a href="/main/ESG.php">ESG</a></li>
             <li class="<?= strpos($current_page, 'newsroom.php') !== false ? 'active' : '' ?>"><a href="/main/newsroom.php">Newsroom</a></li>
-            <li class="<?= $current_page == '/main/Shareholders_Club.php' ? 'active' : '' ?>"><a href="/main/Shareholders_Club.php">Shareholders' Club</a></li>
+            <li class="<?= $current_page == '/main/Shareholders_Club.php' ? 'active' : '' ?>"><a href="/main/Shareholders_Club.php">Shareholders' Club</a></li> -->
           </ul>
             <div class="global">
               <button type="button" class="global_btn">
-                    <?if($_SESSION['lang'] == 'EN') { ?>
+                    <?php if($_SESSION['lang'] == 'EN') { ?>
                     <span>ENG</span> 
-                    <? } else { ?>
+                    <?php } else { ?>
                     <span>KOR</span> 
-                    <? } ?>
+                    <?php } ?>
               <p></p></button>
               <ul class="global_ul">
                 <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KR">KOR</button></li>
@@ -106,11 +125,11 @@
           <nav class="p_sidebar">
           <div class="global_mo">
               <button type="button" class="global_btn_mo">       
-                    <?if($_SESSION['lang'] == 'EN') { ?>
+                    <?php if($_SESSION['lang'] == 'EN') { ?>
                       ENG
-                    <? } else { ?>
+                    <?php } else { ?>
                       KOR
-                    <? } ?> <p></p></button>
+                    <?php } ?> <p></p></button>
               <ul class="global_ul_mo">
                   <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KR">KOR</button></li>
                 <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><button class="langBtn" type="button" data-lang="EN">ENG</button></li>
@@ -122,24 +141,39 @@
               <li class="<?= strpos($current_page, '/whoweare/') !== false ? 'active' : '' ?>">
                 <button class="btn-lnb whoweare">Who we are <p></p></button>
                 <ul class="lnb__list">
-                  <li class="<?= $current_page == '/whoweare/heritage.php' ? 'active' : '' ?>"><a href="/whoweare/heritage.php">HERITAGE</a></li>
+                  <li><a href="#" data-target="section_02">HERITAGE</a></li>
+                  <li><a href="#" data-target="section_05">CAMPAIGNS</a></li>
+                  <li><a href="#" data-target="section_07">BRANDS</a></li>
+                  <li><a href="#" data-target="section_08">INNOVATIONS</a></li>
+                  
+                  <!-- <li class="<?= $current_page == '/whoweare/heritage.php' ? 'active' : '' ?>"><a href="/whoweare/heritage.php">HERITAGE</a></li>
                   <li class="<?= $current_page == '/whoweare/campaigns.php' ? 'active' : '' ?>"><a href="/whoweare/campaigns.php">CAMPAIGNS</a></li>
                   <li class="<?= $current_page == '/whoweare/brands.php' ? 'active' : '' ?>"><a href="/whoweare/brands.php">BRANDS</a></li>
-                  <li class="<?= $current_page == '/whoweare/Innovations.php' ? 'active' : '' ?>"><a href="/whoweare/Innovations.php">INNOVATIONS</a></li>
-                  <li class="<?= $current_page == '/whoweare/achievements.php' ? 'active' : '' ?>"><a href="/whoweare/achievements.php">ACHIEVEMENTS</a></li>
+                  <li class="<?= $current_page == '/whoweare/Innovations.php' ? 'active' : '' ?>"><a href="/whoweare/Innovations.php">INNOVATIONS</a></li> -->
+                  <!-- <li class="<?= $current_page == '/whoweare/achievements.php' ? 'active' : '' ?>"><a href="/whoweare/achievements.php">ACHIEVEMENTS</a></li> -->
                 </ul>
               </li>
-              <li class="<?= $current_page == '/main/history.php' ? 'active' : '' ?>"><a href="/main/history.php">History</a></li>
+
+              <li><a href="#" data-target="section_13">History</a></li>
+              <!-- <li class="<?= $current_page == '/main/history.php' ? 'active' : '' ?>"><a href="/main/history.php">History</a></li> -->
+              
               <li class="<?= (strpos($current_page, '/main/ir_material') !== false || strpos($current_page, '/main/announcements') !== false) ? 'active' : '' ?>">
                 <button class="btn-lnb">Investors <p></p></button>
                 <ul class="lnb__list">
-                  <li class="<?= strpos($current_page, '/main/ir_material') !== false ? 'active' : '' ?>"><a href="/main/ir_material.php">IR Material</a></li>
-                  <li class="<?= strpos($current_page, '/main/announcements') !== false ? 'active' : '' ?>"><a href="/main/announcements.php">Announcements</a></li>
+                  <li><a href="#" data-target="section_14">IR Material</a></li>
+                  <li><a href="#" data-target="section_15">Announcements</a></li>
+                  
+                  <!-- <li class="<?= strpos($current_page, '/main/ir_material') !== false ? 'active' : '' ?>"><a href="/main/ir_material.php">IR Material</a></li>
+                  <li class="<?= strpos($current_page, '/main/announcements') !== false ? 'active' : '' ?>"><a href="/main/announcements.php">Announcements</a></li> -->
                 </ul>
               </li>
-              <li class="<?= $current_page == '/main/ESG.php' ? 'active' : '' ?>"><a href="/main/ESG.php">ESG</a></li>
-              <li class="<?= strpos($current_page, 'newsroom.php') !== false ? 'active' : '' ?>"><a href="/main/newsroom.php">Newsroom</a></li>
-              <li class="<?= $current_page == '/main/Shareholders_Club.php' ? 'active' : '' ?>"><a href="/main/Shareholders_Club.php">Shareholders' Club</a></li>
+              <li><a href="#" data-target="section_16">ESG</a></li>
+              <li><a href="#" data-target="section_19">Newsroom</a></li>
+              
+              <!-- <li class="<?= $current_page == '/main/ESG.php' ? 'active' : '' ?>"><a href="/main/ESG.php">ESG</a></li>
+              <li class="<?= strpos($current_page, 'newsroom.php') !== false ? 'active' : '' ?>"><a href="/main/newsroom.php">Newsroom</a></li> -->
+              
+              <!-- <li class="<?= $current_page == '/main/Shareholders_Club.php' ? 'active' : '' ?>"><a href="/main/Shareholders_Club.php">Shareholders' Club</a></li> -->
             </ul>
           </nav>
         </div>

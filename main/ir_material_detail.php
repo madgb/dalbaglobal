@@ -27,23 +27,23 @@ foreach ($attach_result['result'] as $attachment) {
             <div class="content">
               <?=$post['content']?>
             </div>
-            <? if($attach_result['cnt'] > 0 || $post['url']) { ?>
+            <?php if($attach_result['cnt'] > 0 || $post['url']) { ?>
             <div class="bottom_file_box">
-              <? if($attach_result['cnt'] > 0) { ?>
+              <?php if($attach_result['cnt'] > 0) { ?>
               <div class="files">
                 <span>첨부파일</span>
                 <div class="file_box">
-                  <? foreach($attach_row as $attachment) { ?>
+                  <?php foreach($attach_row as $attachment) { ?>
                   <p><a href="<?=$attachment['file_path']?>" download="<?=$attachment['file_name']?>"><?=$attachment['file_name']?></a></p>
-                  <? } ?>
+                  <?php } ?>
                 </div>
               </div>
-              <? } ?>
-              <? if($post['url']) { ?>
+              <?php } ?>
+              <?php if($post['url']) { ?>
               <a href="<?=$post['url']?>" target="_blank" class="yellow_link">링크바로가기</a>
-              <? } ?>
+              <?php } ?>
             </div>
-            <? } ?>
+            <?php } ?>
             <div class="go_btn"><a href="/main/ir_material.php?page=<?=$page?>&cd=<?=$cd?>" class="go_list_btn">목록으로</a></div>
           </div>
         </div>

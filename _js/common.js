@@ -6,8 +6,34 @@ $(function () {
   $(".datepicker").datepicker({
     dateFormat: "yy-mm-dd",
     dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-    monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-    monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    monthNames: [
+      "1월",
+      "2월",
+      "3월",
+      "4월",
+      "5월",
+      "6월",
+      "7월",
+      "8월",
+      "9월",
+      "10월",
+      "11월",
+      "12월",
+    ],
+    monthNamesShort: [
+      "1월",
+      "2월",
+      "3월",
+      "4월",
+      "5월",
+      "6월",
+      "7월",
+      "8월",
+      "9월",
+      "10월",
+      "11월",
+      "12월",
+    ],
   });
 });
 
@@ -642,7 +668,12 @@ $(document).ready(function () {
   // 초기 설정: active 버튼 기준으로 clicked 지정 + 연도 표시
   let $initial = $(".history_cont .item .one.active");
   $initial.addClass("clicked");
-  $initial.siblings(".time_line").addClass("active").find(".year").hide().fadeIn(700);
+  $initial
+    .siblings(".time_line")
+    .addClass("active")
+    .find(".year")
+    .hide()
+    .fadeIn(700);
 
   // 버튼 클릭 시 동작 (이벤트 위임)
   $(document).on("click", ".history_cont .item .one", function () {
@@ -658,7 +689,13 @@ $(document).ready(function () {
     $(this).closest(".item").find("h3").addClass("active");
 
     // 해당 time_line 표시
-    $(this).siblings(".time_line").addClass("active").find(".year").stop(true, true).hide().fadeIn(700);
+    $(this)
+      .siblings(".time_line")
+      .addClass("active")
+      .find(".year")
+      .stop(true, true)
+      .hide()
+      .fadeIn(700);
 
     // 클릭 후 hover 이벤트 방지 시간 설정 (약간의 여유)
     setTimeout(() => {
@@ -681,7 +718,13 @@ $(document).ready(function () {
     $this.closest(".item").find("> h3").addClass("active");
 
     $(".time_line").removeClass("active").find(".year").stop(true, true).hide();
-    $this.siblings(".time_line").addClass("active").find(".year").stop(true, true).hide().fadeIn(700);
+    $this
+      .siblings(".time_line")
+      .addClass("active")
+      .find(".year")
+      .stop(true, true)
+      .hide()
+      .fadeIn(700);
   });
 
   $(document).on("mouseleave", ".history_cont .item .one", function () {
@@ -699,7 +742,13 @@ $(document).ready(function () {
 
     $clicked.addClass("active");
     $clicked.closest(".item").find("h3").addClass("active");
-    $clicked.siblings(".time_line").addClass("active").find(".year").stop(true, true).hide().fadeIn(700);
+    $clicked
+      .siblings(".time_line")
+      .addClass("active")
+      .find(".year")
+      .stop(true, true)
+      .hide()
+      .fadeIn(700);
   });
 });
 
@@ -759,7 +808,10 @@ $(function () {
       const subMenuHeight = activeMenu.outerHeight();
       const baseHeight = 72; // 기본 헤더 높이
       const totalHeight = baseHeight + subMenuHeight;
-      document.documentElement.style.setProperty("--header-height", `${totalHeight}px`);
+      document.documentElement.style.setProperty(
+        "--header-height",
+        `${totalHeight}px`
+      );
     }
   }
 
@@ -793,7 +845,13 @@ $(document).ready(function () {
   // 언어
   $(".langBtn").on("click", function () {
     const lang = $(this).data("lang");
-    langChange(lang);
+
+    // 현재 URL에서 기존 lang 파라미터 제거하고 새로 추가
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", lang);
+    window.location.href = url.toString();
+
+    // langChange(lang);
   });
 });
 
@@ -802,6 +860,9 @@ function langChange(lang) {
     url: "/lang_change.php",
     type: "POST",
     data: { lang: lang },
+    xhrFields: {
+      withCredentials: true,
+    },
     success: function (response) {
       if (response.success) {
         location.reload();
@@ -814,3 +875,42 @@ function langChange(lang) {
     },
   });
 }
+
+// 클릭 이벤트 처리
+document.querySelectorAll("a[data-target]").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (window.location.pathname !== "/") {
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get("lang");
+      let newUrl = "/";
+
+      if (lang) {
+        newUrl += `?lang=${encodeURIComponent(lang)}`;
+      }
+
+      window.location.href = newUrl;
+      return;
+    }
+
+    const targetId = this.getAttribute("data-target");
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      const sections = document.querySelectorAll(".section");
+      const index = Array.from(sections).indexOf(targetSection);
+      if (index !== -1) {
+        fullpage_api.moveTo(index + 1);
+      }
+    }
+
+    $(".pc_sidebar").removeClass("open");
+    $(".ham_btn").removeClass("active");
+
+    $("body").removeClass("fixed").css({
+      position: "static",
+      top: "auto",
+    });
+  });
+});

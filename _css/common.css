@@ -454,6 +454,10 @@ body.fixed {
     height: 52px;
   }
 
+  .header__inner {
+    border: none;
+  }
+
   .footer__inner > p {
     font-size: 9px;
   }

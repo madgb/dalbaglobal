@@ -5,8 +5,9 @@ $irData = fetchData($DB, "ir%");
 $yearList = getYear($DB);
 $announcementData = fetchData($DB, "announcements");
 $newsData = fetchData($DB, "news%");
-//$announcementData = fetchYearData($DB,"announcements", $yearList[0]);
-$historyYearData = getHistoryYearData($DB);
+$historyYearData = getHistoryYearData_nolimit($DB);
+$lang = $_SESSION['lang'] ? $_SESSION['lang'] : 'KR';
+$langParam = $lang ? "&lang=" . urlencode($lang) : "";
 ?>
 
 <main class="main">
@@ -27,24 +28,23 @@ $historyYearData = getHistoryYearData($DB);
       </div>
     </div>
     <!-- 헤리티지 시작 -->
-    <div class="section section_video">
+    <div class="section section_video" id="section_02">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Piedmont_web.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Piedmont_web.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Piedmont_mob.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Piedmont_mob.mp4" />
         </video>
       </div>
       <div class="text">
-        <h2 class="fade-up_2">Alba Piedmont</h2>
-        <p class="fade-up_2">
-          <? echo $Piedmont_text ?>
+        <h2 class="fade-up">Alba Piedmont</h2>
+        <p class="fade-up">
+          <?php echo $Piedmont_text ?>
         </p>
-        <a href="https://dalba.co.kr/main/html.php?htmid=story/story.html" class="arrow_right fade-up_2"
-          target="_blank">
+        <a href="https://dalba.co.kr/main/html.php?htmid=story/story.html" class="arrow_right fade-up" target="_blank">
           LEARN MORE
           <p></p>
         </a>
@@ -53,31 +53,31 @@ $historyYearData = getHistoryYearData($DB);
     <div class="section section_video_B">
       <div class="video_main_B career pc_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/No.1-Vegan-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/common/No.1-Vegan-PC.mp4" />
         </video>
       </div>
       <div class="video_main_B career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/No.1-Vegan-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/common/No.1-Vegan-MO.mp4" />
         </video>
       </div>
     </div>
     <div class="section section_video back_ef">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]White truffle_web.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]White truffle_web.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]White truffle_mob.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]White truffle_mob.mp4" />
         </video>
       </div>
       <div class="text ">
         <h2 class="fade-up">d’Alba White Truffle</h2>
         <p class="fade-up">
-          <b><? echo $Truffle_text_b ?></b>
-          <? echo $Truffle_text_p ?>
+          <b><?php echo $Truffle_text_b ?></b>
+          <?php echo $Truffle_text_p ?>
         </p>
         <a href="https://dalba.co.kr/main/html.php?htmid=story/white-truffle.html" class="arrow_right fade-up"
           target="_blank">
@@ -88,17 +88,17 @@ $historyYearData = getHistoryYearData($DB);
     </div>
     <!-- 헤리티지 끝 -->
 
-    <!-- 캠페인 시작 -->
-    <div class="section section_video">
+    <!-- 캠페인 시작 (섹션 05) -->
+    <div class="section section_video" id="section_05">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/compaign/hanhyejin-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/compaign/hanhyejin-PC.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/compaign/hanhyejin-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/compaign/hanhyejin-MO.mp4" />
         </video>
       </div>
       <div class="text_left">
@@ -113,12 +113,12 @@ $historyYearData = getHistoryYearData($DB);
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/compaign/Irina-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/compaign/Irina-PC.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/compaign/Irina-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/compaign/Irina-MO.mp4" />
         </video>
       </div>
       <div class="text_left">
@@ -131,8 +131,8 @@ $historyYearData = getHistoryYearData($DB);
     </div>
     <!-- 캠페인 끝 -->
 
-    <!-- 브랜드 시작 -->
-    <div class="section brands_back brand_01">
+    <!-- 브랜드 시작 (섹션 07)-->
+    <div class="section brands_back brand_01" id="section_07">
       <div class="item_box">
         <div class="item d’Alba">
           <div class="tit">
@@ -142,7 +142,7 @@ $historyYearData = getHistoryYearData($DB);
           <div class="text">
             <h2>Premium Vegan Skincare Brand</h2>
             <h3>
-              <? echo $Skincare_Brand ?>
+              <?php echo $Skincare_Brand ?>
             </h3>
           </div>
         </div>
@@ -154,7 +154,7 @@ $historyYearData = getHistoryYearData($DB);
           <div class="text">
             <h2>Contemporary Inner Beauty Brand</h2>
             <h3>
-              <? echo $Beauty_Brand ?>
+              <?php echo $Beauty_Brand ?>
             </h3>
           </div>
         </div>
@@ -166,7 +166,7 @@ $historyYearData = getHistoryYearData($DB);
           <div class="text">
             <h2>White Truffle-based Italian Fine Dining</h2>
             <h3>
-              <? echo $Fine_Dining ?>
+              <?php echo $Fine_Dining ?>
             </h3>
           </div>
         </div>
@@ -174,20 +174,20 @@ $historyYearData = getHistoryYearData($DB);
     </div>
     <!-- 브랜드 끝 -->
 
-    <!-- innovation start -->
-    <div class="section">
+    <!-- innovation start (섹션 08) -->
+    <div class="section" id="section_08">
       <div class="section_video_text">
         <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
         </video>
         <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
         </video>
         <div class="text_boxB">
           <h1>First Spray Serum</h1>
           <div class="sub">
-            <span><? echo $Spray_Serum_span ?></span>
-            <p><? echo $Spray_Serum_p ?></p>
+            <span><?php echo $Spray_Serum_span ?></span>
+            <p><?php echo $Spray_Serum_p ?></p>
           </div>
           <!-- <a href="#" class="arrow_right">
             <p></p>
@@ -203,9 +203,9 @@ $historyYearData = getHistoryYearData($DB);
             Sunscreen
           </h1>
           <div class="sub">
-            <span><? echo $Tone_up_Sunscreen_span ?></span>
+            <span><?php echo $Tone_up_Sunscreen_span ?></span>
             <p>
-              <? echo $Tone_up_Sunscreen_p ?>
+              <?php echo $Tone_up_Sunscreen_p ?>
             </p>
           </div>
           <!-- <a href="#" class="arrow_right">
@@ -213,20 +213,20 @@ $historyYearData = getHistoryYearData($DB);
           </a> -->
         </div>
         <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
         </video>
         <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
         </video>
       </div>
     </div>
     <div class="section">
       <div class="section_video_text">
         <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/Double-Cream-PC.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
         </video>
         <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/Innovations/Double-Cream-MO.mp4" />
+          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
         </video>
         <div class="text_boxB">
           <h1>
@@ -234,9 +234,9 @@ $historyYearData = getHistoryYearData($DB);
             Double Serum & Cream
           </h1>
           <div class="sub">
-            <span><? echo $Double_Serum_span ?></span>
+            <span><?php echo $Double_Serum_span ?></span>
             <p>
-              <? echo $Double_Serum_p ?>
+              <?php echo $Double_Serum_p ?>
             </p>
           </div>
           <!-- <a href="#" class="arrow_right">
@@ -247,129 +247,135 @@ $historyYearData = getHistoryYearData($DB);
     </div>
     <!-- innovation end -->
 
-    <div class="section">
+    <!-- 미션 시작 (섹션 11) -->
+    <div class="section" id="section_11">
       <div class="slide02 mission" id="mission">
         <div class="video_main career pc_show">
           <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" src="./_img/common/[stage1]Mission_web.mp4" />
+            <source type="video/mp4" data-src="./_img/common/[stage1]Mission_web.mp4" />
           </video>
         </div>
         <div class="video_main career mo_show">
           <video class="video " autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" src="./_img/common/[stage1]Mission_mob.mp4" />
+            <source type="video/mp4" data-src="./_img/common/[stage1]Mission_mob.mp4" />
           </video>
         </div>
         <div class="text">
           <h2>Mission</h2>
           <p>
-            <? echo $main_mission ?>
+            <?php echo $main_mission ?>
           </p>
         </div>
       </div>
     </div>
 
-    <div class="section">
+    <!-- 커리어 시작 (섹션 12) -->
+    <div class="section" id="section_12">
       <div class="slide03 career" id="career">
         <div class="video_main">
           <video class="video pc_show object-left" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" src="./_img/common/[stage1]Career_web.mp4" />
+            <source type="video/mp4" data-src="./_img/common/[stage1]Career_web.mp4" />
           </video>
           <video class="video mo_show " autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" src="./_img/common/[stage1]Career_mob.mp4" />
+            <source type="video/mp4" data-src="./_img/common/[stage1]Career_mob.mp4" />
           </video>
         </div>
         <div class="text">
           <h2>Career</h2>
           <p>
-            <? echo $Career_text ?>
+            <?php echo $Career_text ?>
           </p>
           <a href="https://dalba.career.greetinghr.com/dalbaglobal"
-            target="_blank"><span><? echo $Career_button ?></span>
+            target="_blank"><span><?php echo $Career_button ?></span>
             <p></p>
           </a>
         </div>
       </div>
     </div>
-    <div class="section_2 section full_his">
+
+    <!-- 히스토리 시작 (섹션 13) -->
+    <!-- <div class="section_2 section full_his" id="section_13"> -->
+    <div class="section_2 section his_section" id="section_13">
       <!-- pc-history start -->
       <div class="history_inner">
         <h1>History</h1>
-        <div class="history_cont" id="history_cont">
-          <?
+        <div class="history_cont history_pc" id="history_pc">
+          <?php
           $cnt = 0;
           foreach ($historyYearData as $year) {
-            $historyMonthData = getHistoryMonthData($DB, $year);
+            $historyMonthData = $lang == "EN" ? getHistoryMonthData_eng($DB, $year) : getHistoryMonthData($DB, $year);
             ?>
             <div class="item">
               <h3 class=" <?= $cnt == 0 ? "active" : "" ?>"><?= $year ?></h3>
               <button type="button" class="one <?= $cnt == 0 ? "active" : "" ?>"></button>
               <div class="time_line">
-                <? foreach ($historyMonthData as $month) {
-                  $historyData = getHistoryData($DB, $year, $month);
+                <?php foreach ($historyMonthData as $month) {
+                  $historyData = $lang == "EN" ? getHistoryData_eng($DB, $year, $month) : getHistoryData($DB, $year, $month);
                   ?>
                   <div class="year">
                     <h4><?= $month ?></h4>
                     <ul>
-                      <? foreach ($historyData as $data) { ?>
+                      <?php foreach ($historyData as $data) { ?>
                         <li><?= $data['content'] ?></li>
-                      <? } ?>
+                      <?php } ?>
                     </ul>
                   </div>
-                <? } ?>
+                <?php } ?>
               </div>
             </div>
-            <? $cnt++;
+            <?php $cnt++;
           } ?>
         </div>
-        <a href="/main/history.php" class="btn go_history_btn"><? echo $more ?></a>
       </div>
       <!-- pc-history end -->
       <!-- mo-history start -->
-      <div class="mo_his_inner history">
+      <div class="mo_his_inner ">
         <div class="cont">
           <h1>History</h1>
-          <ul class="year_btn">
-            <? foreach ($historyYearData as $year) { ?>
+          <ul class="year_btn" id="history_mo_years">
+            <?php foreach ($historyYearData as $year) { ?>
               <li><a href="#tab_<?= $year ?>"><?= $year ?></a></li>
-            <? } ?>
+            <?php } ?>
           </ul>
-          <div class="tabcontent">
-            <? foreach ($historyYearData as $year) {
-              $historyMonthData = getHistoryMonthData($DB, $year);
+          <div class="tabcontent history_mo" id="history_mo_content">
+            <?php foreach ($historyYearData as $year) {
+              $historyMonthData = $lang == "EN" ? getHistoryMonthData_eng($DB, $year) : getHistoryMonthData($DB, $year);
               ?>
               <div id="tab_<?= $year ?>" class="year_detail">
-                <? foreach ($historyMonthData as $month) {
-                  $historyData = getHistoryData($DB, $year, $month);
+                <?php foreach ($historyMonthData as $month) {
+                  $historyData = $lang == "EN" ? getHistoryData_eng($DB, $year, $month) : getHistoryData($DB, $year, $month);
                   ?>
                   <div class="item">
                     <h3><?= $month ?></h3>
                     <ol>
-                      <? foreach ($historyData as $data) { ?>
+                      <?php foreach ($historyData as $data) { ?>
                         <li><?= $data['content'] ?></li>
-                      <? } ?>
+                      <?php } ?>
                     </ol>
                   </div>
-                <? } ?>
+                <?php } ?>
               </div>
-            <? } ?>
+            <?php } ?>
           </div>
-          <a href="./main/history.html" class="btn go_history_btn"><? echo $more ?></a>
         </div>
       </div>
       <!-- mo-history end -->
     </div>
-    <div class="section section_2 IR_Material full_ir" id="IR_Material">
+
+    <!-- IR Material 시작 (섹션 14) -->
+    <div class="section section_2 IR_Material full_ir" id="section_14">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
         <div class="title_box">
           <h1>IR Material</h1>
-          <a href="/main/ir_material.php" class="pc_show"><? echo $more ?></a>
+          <a href="/main/ir_material.php<?php echo $langParam ? '?' . $langParam : ''; ?>"
+            class="pc_show"><?php echo $more ?></a>
         </div>
         <ul class="ir_ul">
           <?php foreach ($irData['posts'] as $row) { ?>
             <li>
-              <a href="./main/ir_material_detail.php?b_idx=<?php echo $row['b_idx'] ?>">
+              <a href="./main/ir_material_detail.php?b_idx=<?php echo $row['b_idx'] . $langParam ?>">
                 <div class="title">
                   <h2><?php echo htmlspecialchars($row['subject']) ?></h2>
                   <span><?php echo date('Y.m.d', strtotime($row['w_dt'])) ?></span>
@@ -381,21 +387,25 @@ $historyYearData = getHistoryYearData($DB);
             </li>
           <?php } ?>
         </ul>
-        <a href="/main/ir_material.php" class="btn go_history_btn mo_show"><? echo $more ?></a>
+        <a href="/main/ir_material.php<?php echo $langParam ? '?' . $langParam : ''; ?>"
+          class="btn go_history_btn mo_show"><?php echo $more ?></a>
       </div>
     </div>
-    <div class="section section_2 Announcements full_ir " id="Announcements">
+
+    <!-- Announcements 시작 (섹션 15) -->
+    <div class="section section_2 Announcements full_ir " id="section_15">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
         <div class="title_box">
           <h1>Announcements</h1>
-          <a href="/main/announcements.php" class="pc_show"><? echo $more ?></a>
+          <a href="/main/announcements.php<?php echo $langParam ? '?' . $langParam : ''; ?>"
+            class="pc_show"><?php echo $more ?></a>
         </div>
         <ul class="ir_ul">
           <?php foreach ($announcementData['posts'] as $row) { ?>
             <li>
-              <a href="/main/announcements_detail.php?b_idx=<?php echo $row['b_idx'] ?>">
+              <a href="/main/announcements_detail.php?b_idx=<?php echo $row['b_idx'] . $langParam ?>">
                 <div class="title">
                   <h2><?php echo $row['subject'] ?></h2>
                   <span><?php echo date('Y.m.d', strtotime($row['w_ymd'])) ?></span>
@@ -407,28 +417,29 @@ $historyYearData = getHistoryYearData($DB);
             </li>
           <?php } ?>
         </ul>
-        <a href="./main/announcements.php" class="btn go_history_btn mo_show"><? echo $more ?></a>
+        <a href="./main/announcements.php<?php echo $langParam ? '?' . $langParam : ''; ?>"
+          class="btn go_history_btn mo_show"><?php echo $more ?></a>
       </div>
     </div>
 
-    <!-- ESG section start -->
-    <div class="section section_video esg-section">
+    <!-- ESG section start (section 16)-->
+    <div class="section section_video esg-section" id="section_16">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]environment_web.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Environment_web.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]environment_mob_2.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Environment_mob.mp4" />
         </video>
       </div>
       <div class="text B text_ani">
         <h2>Environment</h2>
         <h6>
-          <b><? echo $Environment_b ?></b>
+          <b><?php echo $Environment_b ?></b>
           <p>
-            <? echo $Environment_p ?>
+            <?php echo $Environment_p ?>
           </p>
         </h6>
       </div>
@@ -436,20 +447,20 @@ $historyYearData = getHistoryYearData($DB);
     <div class="section section_video esg-section">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Social_web.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Social_web.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Social_mob.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Social_mob.mp4" />
         </video>
       </div>
       <div class="text B text_ani">
         <h2>Social</h2>
         <h6>
-          <b><? echo $Social_b ?></b>
+          <b><?php echo $Social_b ?></b>
           <p>
-            <? echo $Social_p ?>
+            <?php echo $Social_p ?>
           </p>
         </h6>
       </div>
@@ -457,30 +468,32 @@ $historyYearData = getHistoryYearData($DB);
     <div class="section section_video esg-section">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Governance_web.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Governance_web.mp4" />
         </video>
       </div>
       <div class="video_main career mo_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" src="./_img/common/[stage2]Governance_mob.mp4" />
+          <source type="video/mp4" data-src="./_img/common/[stage2]Governance_mob.mp4" />
         </video>
       </div>
       <div class="text B text_ani">
         <h2>Governance</h2>
         <h6>
-          <b><? echo $Governance_b ?></b>
-          <p><? echo $Governance_p ?></p>
+          <b><?php echo $Governance_b ?></b>
+          <p><?php echo $Governance_p ?></p>
         </h6>
       </div>
     </div>
     <!-- ESG section end -->
-    <div class="section section_2 Newsroom full_ir" id="Newsroom">
+
+    <!-- Newsroom start (section 19) -->
+    <div class="section section_2 Newsroom full_ir" id="section_19">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
         <div class="title_box">
           <h1>Newsroom</h1>
-          <a href="/main/newsroom.php" class="pc_show"><? echo $more ?></a>
+          <a href="/main/newsroom.php" class="pc_show"><?php echo $more ?></a>
         </div>
         <ul class="ir_ul">
           <?php foreach ($newsData['posts'] as $row) { ?>
@@ -498,7 +511,7 @@ $historyYearData = getHistoryYearData($DB);
             </li>
           <?php } ?>
         </ul>
-        <a href="/main/newsroom.php" class="btn go_history_btn mo_show"><? echo $more ?></a>
+        <a href="/main/newsroom.php" class="btn go_history_btn mo_show"><?php echo $more ?></a>
       </div>
     </div>
     <div class="section fp-auto-height section_footer">
@@ -520,8 +533,14 @@ $historyYearData = getHistoryYearData($DB);
   let isMouseInTopArea = false;
 
   document.addEventListener("DOMContentLoaded", () => {
-    isHeaderAlwaysVisible = true;
-    header.classList.remove("hidden");
+    const isMobile = window.innerWidth <= 768;
+    isHeaderAlwaysVisible = isMobile;
+
+    if (isMobile) {
+      header.classList.remove("hidden"); // 모바일은 항상 보이게
+      return; // 마우스 이벤트 등록 안함
+    }
+    // header.classList.remove("hidden");
 
     document.addEventListener("mousemove", function (e) {
       const inTopArea = e.clientY < 100;
@@ -558,6 +577,29 @@ $historyYearData = getHistoryYearData($DB);
     });
   });
 
+  function preloadVideosInSection(section) {
+    const videos = section.querySelectorAll("video[data-src]");
+    videos.forEach(video => {
+      const source = video.querySelector("source");
+      const dataSrc = source.getAttribute("data-src");
+
+      if (dataSrc && !source.src) {
+        source.src = dataSrc;
+        video.load(); // metadata까지만 preload됨
+      }
+    });
+  }
+
+  function loadVideosInSection(section) {
+    const videos = section.querySelectorAll("video[data-src]");
+    videos.forEach(video => {
+      const source = video.querySelector("source");
+      if (source.src && video.readyState < 3) {
+        video.play().catch(() => {}); // 자동 재생 유도
+      }
+    });
+  }
+
   // fullpage 초기화
   new fullpage("#fullpage", {
     autoScrolling: true,
@@ -565,18 +607,34 @@ $historyYearData = getHistoryYearData($DB);
     scrollOverflow: true,
     fitToSection: true,
 
+    onLeave: function (origin, destination, direction) {
+      // 현재 위치에서 다음 위치로 이동하기 직전
+      preloadVideosInSection(destination.item);  // 바로 다음 섹션을 미리 준비
+    },
+
     afterLoad: function (origin, destination, direction) {
-      // 0번째 슬라이드면 항상 헤더 보이게
-      if (destination.index === 0) {
+      const isMobile = window.innerWidth <= 768;
+
+      loadVideosInSection(destination.item);
+
+      // 모바일이 아니면 헤더 숨김/표시 조건 적용
+      if (!isMobile) {
+        if (destination.index === 0) {
+          header.classList.remove("hidden");
+          isHeaderAlwaysVisible = true;
+        } else {
+          header.classList.add("hidden");
+          isHeaderAlwaysVisible = false;
+        }
+      } else {
+        // 모바일이면 항상 보여지도록
         header.classList.remove("hidden");
         isHeaderAlwaysVisible = true;
-      } else {
-        header.classList.add("hidden");
-        isHeaderAlwaysVisible = false;
       }
 
       // 헤더 색상 전환
-      if (destination.index >= 2) {
+      // white 2, 4 
+      if (destination.index === 2) {
         header.classList.add('white');
       } else {
         header.classList.remove('white');
@@ -590,6 +648,13 @@ $historyYearData = getHistoryYearData($DB);
         const textEl = currentSection.querySelector('.text_ani');
         if (textEl) textEl.classList.add('active');
       }
+
+      // fade-up 애니메이션 트리거
+      // 먼저 모든 fade-up에서 active 제거 (선택사항)
+      document.querySelectorAll('.fade-up').forEach(el => el.classList.remove('active'));
+
+      // 현재 섹션 안의 fade-up에 active 추가
+      currentSection.querySelectorAll('.fade-up').forEach(el => el.classList.add('active'));
     }
   });
 
