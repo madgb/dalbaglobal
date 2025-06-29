@@ -144,25 +144,42 @@ $(document).ready(function () {
 //언어
 $(document).ready(function () {
   $(".global_ul").hide();
+  $(".brand_ul").hide();
 
   $(".global_btn").click(function (e) {
     e.stopPropagation();
     $(".global_ul").toggle();
+    $(".brand_ul").hide();
+  });
+
+  $(".brand_btn").click(function (e) {
+    e.stopPropagation();
+    $(".brand_ul").toggle();
+    $(".global_ul").hide();
   });
 
   $(document).click(function (e) {
     if (!$(e.target).closest(".global").length) {
       $(".global_ul").hide();
+      $(".brand_ul").hide();
     }
   });
 });
 //mo lang
 $(document).ready(function () {
   $(".global_ul_mo").hide();
+  $(".brand-site-ul").hide();
 
   $(".global_btn_mo").click(function (e) {
     e.stopPropagation();
     $(".global_ul_mo").toggle();
+    $(".brand-site-ul").hide();
+  });
+
+  $(".brand-site-btn").click(function (e) {
+    e.stopPropagation();
+    $(".brand-site-ul").toggle();
+    $(".global_ul_mo").hide();
   });
 
   $(document).click(function (e) {
@@ -821,7 +838,7 @@ $(function () {
     $(".header .sub_menu").addClass("active");
   });
 
-  $(".menu").on("mouseleave", function () {
+  $(".header").on("mouseleave", function () {
     $(".header").removeClass("active");
     $(".header .sub_menu").removeClass("active");
     document.documentElement.style.setProperty("--header-height", `72px`);

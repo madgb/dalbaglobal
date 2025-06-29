@@ -177,71 +177,95 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- innovation start (섹션 08) -->
     <div class="section" id="section_08">
       <div class="section_video_text">
-        <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
-        </video>
-        <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
-        </video>
-        <div class="text_boxB">
-          <h1>First Spray Serum</h1>
-          <div class="sub">
-            <span><?php echo $Spray_Serum_span ?></span>
-            <p><?php echo $Spray_Serum_p ?></p>
+        <div class="video-background">
+          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
+          </video>
+          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
+          </video>
+          <div class="text_overlay pc_show">
+            <h1>First Spray Serum</h1>
+            <div class="sub">
+              <span><?php echo $Spray_Serum_span ?></span>
+              <p><?php echo $Spray_Serum_p ?></p>
+            </div>
           </div>
-          <!-- <a href="#" class="arrow_right">
-            <p></p>
-          </a> -->
+
+          <div class="text_boxB">
+            <h1>First Spray Serum</h1>
+            <div class="sub">
+              <span><?php echo $Spray_Serum_span ?></span>
+              <p><?php echo $Spray_Serum_p ?></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="section right">
       <div class="section_video_text B">
-        <div class="text_boxB">
-          <h1>
-            Waterful Tone-up<br />
-            Sunscreen
-          </h1>
-          <div class="sub">
-            <span><?php echo $Tone_up_Sunscreen_span ?></span>
-            <p>
-              <?php echo $Tone_up_Sunscreen_p ?>
-            </p>
+        <div class="video-background">
+          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
+          </video>
+          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
+          </video>
+
+          <div class="text_overlay pc_show">
+            <h1>
+              Waterful Tone-up<br />
+              Sunscreen
+            </h1>
+            <div class="sub">
+              <span><?php echo $Tone_up_Sunscreen_span ?></span>
+              <p><?php echo $Tone_up_Sunscreen_p ?></p>
+            </div>
           </div>
-          <!-- <a href="#" class="arrow_right">
-            <p></p>
-          </a> -->
+
+          <div class="text_boxB">
+            <h1>
+              Waterful Tone-up<br />
+              Sunscreen
+            </h1>
+            <div class="sub">
+              <span><?php echo $Tone_up_Sunscreen_span ?></span>
+              <p><?php echo $Tone_up_Sunscreen_p ?></p>
+            </div>
+          </div>
         </div>
-        <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
-        </video>
-        <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
-        </video>
       </div>
     </div>
     <div class="section">
       <div class="section_video_text">
-        <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
-        </video>
-        <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
-          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
-        </video>
-        <div class="text_boxB">
-          <h1>
-            White Truffle<br />
-            Double Serum & Cream
-          </h1>
-          <div class="sub">
-            <span><?php echo $Double_Serum_span ?></span>
-            <p>
-              <?php echo $Double_Serum_p ?>
-            </p>
+        <div class="video-background">
+          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
+          </video>
+          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
+          </video>
+          <div class="text_overlay pc_show">
+            <h1>
+              White Truffle<br />
+              Double Serum & Cream
+            </h1>
+            <div class="sub">
+              <span><?php echo $Double_Serum_span ?></span>
+              <p><?php echo $Double_Serum_p ?></p>
+            </div>
           </div>
-          <!-- <a href="#" class="arrow_right">
-            <p></p>
-          </a> -->
+          
+          <div class="text_boxB">
+            <h1>
+              White Truffle<br />
+              Double Serum & Cream
+            </h1>
+            <div class="sub">
+              <span><?php echo $Double_Serum_span ?></span>
+              <p><?php echo $Double_Serum_p ?></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -595,7 +619,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     videos.forEach(video => {
       const source = video.querySelector("source");
       if (source.src && video.readyState < 3) {
-        video.play().catch(() => {}); // 자동 재생 유도
+        video.play().catch(() => { }); // 자동 재생 유도
       }
     });
   }

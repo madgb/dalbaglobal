@@ -336,15 +336,16 @@
 .section_video_text {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 100%;
   gap: 40px;
+  height: 100vh;
 }
 .section_video_text.B {
   justify-content: end;
 }
 
 .section_video_text video {
-  max-width: 1137.778px;
+  max-width: 1300px;
   width: 100%;
 }
 .section_video_text .text_boxB {
@@ -389,6 +390,53 @@
   background: url(../_img/common/icon_arrow_right_one.svg) no-repeat center center / contain;
   width: 40px;
   height: 40px;
+}
+
+.video-background {
+  margin: 0 auto;
+  position: relative;
+}
+
+.video-background .text_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  padding: 3rem;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0) 60%);
+}
+
+.video-background .text_overlay h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+
+.video-background .text_overlay .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-background .text_overlay .sub span {
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.video-background .text_overlay .sub p {
+  font-family: "Pretendard";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section_video_text .text_boxB {
+  display: none;
 }
 
 /* Shareholders'_Club */
@@ -570,29 +618,11 @@
 .canvas_box {
   height: 100%;
 }
-@media screen and (max-width: 1800px) {
-  .section_video_text video {
-    max-width: 1000px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .section_video_text video {
-    max-width: 800px;
-    width: 100%;
-  }
-}
+
 @media screen and (max-width: 1400px) {
   .section_video_text {
     gap: 20px;
     width: 100%;
-  }
-  .section_video_text video {
-    max-width: 700px;
-    width: 100%;
-  }
-  .section_video_text .text_boxB {
-    padding: 0 20px;
   }
   .club_inner .text_box {
     left: 50%;
@@ -600,19 +630,12 @@
   }
 }
 
-/* Pad & Mobile */
-@media screen and (max-width: 1200px) {
-  .section_video_text video {
-    max-width: 500px;
-    width: 100%;
-  }
-}
-
-/* Pad */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-}
 /* Mobile */
 @media screen and (max-width: 768px) {
+  .section_video_text .text_boxB {
+    display: flex;
+    padding: 0 20px;
+  }
   .fp-auto-height.pc_show {
     display: none;
   }
@@ -750,7 +773,7 @@
   }
   .section_video_text .text_boxB {
     gap: 16px;
-    padding: 0 20px 40px;
+    padding: 25px 20px 40px;
   }
   .section_video_text .text_boxB h1 {
     font-size: 30px;
