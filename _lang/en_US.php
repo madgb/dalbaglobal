@@ -7,12 +7,10 @@ $Piedmont_text = 'd’Alba’s inspiration came from the pristine nature of Alba
 $Truffle_text_b = 'Diamonds Beneath the Soil - White Truffle';
 $Truffle_text_p = 'd’Alba proudly selects the finest antioxidant-rich Italian white truffles from Alba.<br>
 Experience remarkable skin transformation with our Trufferrol™ and innovative 3CMTE technology.';
-$Skincare_Brand='Premium Vegan Skincare Brand<br>
-with the finest Italian white truffles';
+$Skincare_Brand='with the finest Italian white truffles';
 $Beauty_Brand = 'Contemporary Beauty Supplement Brand<br>
 recognized with Grand Prix Award for its premium ingredients first in Korea';
-$Fine_Dining = 'White Truffle-based Italian Fine Dining<br>
-inspired by Alba Piedmont, Italy';
+$Fine_Dining = 'inspired by Alba Piedmont, Italy';
 $Spray_Serum_span = 'Spray Your Serum';
 $Spray_Serum_p = '4-in-1 solution for Toner, Essence, Serum,<br class="mo_show" /> and Make fixer';
 $Tone_up_Sunscreen_span = 'New era of Sun Product';

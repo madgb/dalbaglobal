@@ -132,56 +132,93 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- 캠페인 끝 -->
 
     <!-- 브랜드 시작 (섹션 07)-->
-    <div class="section brands_back brand_01" id="section_07">
-      <div class="item_box">
-        <div class="item d’Alba">
-          <div class="tit">
-            <h1>d’Alba</h1>
-            <a href="https://brand.naver.com/dalba" target="_blank" class="arrow_right"></a>
-          </div>
-          <div class="text">
-            <h2>Premium Vegan Skincare Brand</h2>
-            <h3>
-              <?php echo $Skincare_Brand ?>
-            </h3>
-          </div>
-        </div>
-        <div class="item Veganery">
-          <div class="tit">
-            <h1>Veganery</h1>
-            <a href="https://brand.naver.com/veganery" target="_blank" class="arrow_right"></a>
-          </div>
-          <div class="text">
-            <h2>Contemporary Inner Beauty Brand</h2>
-            <h3>
-              <?php echo $Beauty_Brand ?>
-            </h3>
-          </div>
-        </div>
-        <div class="item Truffle">
-          <div class="tit">
-            <h1>Truffle di Alba</h1>
-            <a href="https://www.instagram.com/truffle_di_alba/" target="_blank" class="arrow_right"></a>
-          </div>
-          <div class="text">
-            <h2>White Truffle-based Italian Fine Dining</h2>
-            <h3>
-              <?php echo $Fine_Dining ?>
-            </h3>
-          </div>
-        </div>
+    <div class="section section_video" id="section_07">
+      <div class="video_main career pc_show">
+        <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/dalba_brand_pc.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/dalba_brand_mo.mp4" />
+        </video>
+      </div>
+      <div class="text">
+        <h2 class="fade-up">d’Alba</h2>
+        <p class="fade-up">
+          Premium Vegan Skincare Brand
+        </p>
+        <p class="fade-up">
+          <?php echo $Skincare_Brand ?>
+        </p>
+        <a href="https://brand.naver.com/dalba" class="arrow_right fade-up" target="_blank">
+          LEARN MORE
+          <p></p>
+        </a>
+      </div>
+    </div>
+
+    <div class="section section_video">
+      <div class="video_main career pc_show">
+        <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/veganery_pc.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/veganery_mo.mp4" />
+        </video>
+      </div>
+      <div class="text">
+        <h2 class="fade-up">Veganery</h2>
+        <p class="fade-up">
+          Contemporary Inner Beauty Brand
+        </p>
+        <p class="fade-up">
+          <?php echo $Beauty_Brand ?>
+        </p>
+        <a href="https://brand.naver.com/veganery" class="arrow_right fade-up" target="_blank">
+          LEARN MORE
+          <p></p>
+        </a>
+      </div>
+    </div>
+
+    <div class="section section_video">
+      <div class="video_main career pc_show">
+        <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/truffle_de_alba_pc.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/brand/truffle_de_alba_mo.mp4" />
+        </video>
+      </div>
+      <div class="text">
+        <h2 class="fade-up">Truffle di Alba</h2>
+        <p class="fade-up">
+          White Truffle-based Italian Fine Dining
+        </p>
+        <p class="fade-up">
+          <?php echo $Fine_Dining ?>
+        </p>
+        <a href="https://www.instagram.com/truffle_di_alba/" class="arrow_right fade-up" target="_blank">
+          LEARN MORE
+          <p></p>
+        </a>
       </div>
     </div>
     <!-- 브랜드 끝 -->
 
     <!-- innovation start (섹션 08) -->
-    <div class="section" id="section_08">
+    <div class="section innovation" id="section_08">
       <div class="section_video_text">
         <div class="video-background">
-          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="pc_show" controls muted playsinline loop>
             <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
           </video>
-          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="mo_show" controls muted playsinline loop preload="auto">
             <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
           </video>
           <div class="text_overlay pc_show">
@@ -192,7 +229,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
             </div>
           </div>
 
-          <div class="text_boxB">
+          <div class="text_boxB text_overlay">
             <h1>First Spray Serum</h1>
             <div class="sub">
               <span><?php echo $Spray_Serum_span ?></span>
@@ -202,13 +239,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </div>
       </div>
     </div>
-    <div class="section right">
-      <div class="section_video_text B">
+    <div class="section innovation">
+      <div class="section_video_text">
         <div class="video-background">
-          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="pc_show" controls muted playsinline loop>
             <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
           </video>
-          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="mo_show" controls muted playsinline loop preload="auto">
             <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
           </video>
 
@@ -223,7 +260,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
             </div>
           </div>
 
-          <div class="text_boxB">
+          <div class="text_boxB text_overlay">
             <h1>
               Waterful Tone-up<br />
               Sunscreen
@@ -236,13 +273,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section innovation">
       <div class="section_video_text">
         <div class="video-background">
-          <video class="pc_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="pc_show" controls muted playsinline loop>
             <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
           </video>
-          <video class="mo_show" autoplay muted playsinline loop data-autoplay="true">
+          <video class="mo_show" controls muted playsinline loop preload="auto">
             <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
           </video>
           <div class="text_overlay pc_show">
@@ -255,8 +292,8 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
               <p><?php echo $Double_Serum_p ?></p>
             </div>
           </div>
-          
-          <div class="text_boxB">
+
+          <div class="text_boxB text_overlay">
             <h1>
               White Truffle<br />
               Double Serum & Cream
@@ -557,6 +594,22 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
   let isMouseInTopArea = false;
 
   document.addEventListener("DOMContentLoaded", () => {
+    const videos = document.querySelectorAll('.innovation .video-background video');
+
+    videos.forEach((video) => {
+      const section = video.closest('.section');
+      const isMobile = window.innerWidth <= 768;
+      const overlay = section.querySelector(isMobile ? '.text_boxB.text_overlay' : '.text_overlay.pc_show');
+
+      video.addEventListener('play', () => {
+        setTimeout(() => {
+          if (overlay) {
+            overlay.classList.add('hide-overlay');
+          }
+        }, 2500); // 3초 후 숨김
+      });
+    });
+
     const isMobile = window.innerWidth <= 768;
     isHeaderAlwaysVisible = isMobile;
 
@@ -601,25 +654,35 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     });
   });
 
+  function isMobileDevice() {
+    return window.innerWidth <= 768;
+  }
+
   function preloadVideosInSection(section) {
-    const videos = section.querySelectorAll("video[data-src]");
-    videos.forEach(video => {
-      const source = video.querySelector("source");
+    const isMobile = isMobileDevice();
+    const classToLoad = isMobile ? ".mo_show" : ".pc_show";
+
+    const sources = section.querySelectorAll(`${classToLoad} > source[data-src]`);
+    sources.forEach(source => {
+      const video = source.closest("video");
       const dataSrc = source.getAttribute("data-src");
 
       if (dataSrc && !source.src) {
         source.src = dataSrc;
-        video.load(); // metadata까지만 preload됨
+        video.load(); // 썸네일/controls 노출 보장
       }
     });
   }
 
   function loadVideosInSection(section) {
-    const videos = section.querySelectorAll("video[data-src]");
-    videos.forEach(video => {
-      const source = video.querySelector("source");
+    const isMobile = isMobileDevice();
+    const classToLoad = isMobile ? ".mo_show" : ".pc_show";
+
+    const sources = section.querySelectorAll(`${classToLoad} > source[data-src]`);
+    sources.forEach(source => {
+      const video = source.closest("video");
       if (source.src && video.readyState < 3) {
-        video.play().catch(() => { }); // 자동 재생 유도
+        video.play().catch(() => { });
       }
     });
   }

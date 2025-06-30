@@ -355,7 +355,6 @@
 }
 
 .section_video_text .text_boxB h1 {
-  color: #000;
   font-size: 48px;
   font-weight: 400;
   line-height: 48px; /* 100% */
@@ -368,7 +367,6 @@
 }
 
 .section_video_text .text_boxB .sub span {
-  color: #000;
   font-family: "Pretendard";
   font-size: 20px;
   font-weight: 500;
@@ -376,7 +374,6 @@
 }
 
 .section_video_text .text_boxB .sub p {
-  color: #505050;
   font-family: "Pretendard";
   font-size: 20px;
   font-weight: 400;
@@ -401,6 +398,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
   color: #fff;
   width: 100%;
   padding: 3rem;
@@ -433,6 +431,10 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
+}
+
+.video-background .text_overlay.hide-overlay {
+  opacity: 0;
 }
 
 .section_video_text .text_boxB {
@@ -766,14 +768,13 @@
     height: 190px !important;
   }
   .section_video_text video {
-    height: 73dvh;
-    max-width: calc(100% - 17px);
+    height: 100vh;
     margin: 0 auto;
-    object-fit: contain;
+    object-fit: cover;
   }
   .section_video_text .text_boxB {
     gap: 16px;
-    padding: 25px 20px 40px;
+    padding: 65px 20px 40px;
   }
   .section_video_text .text_boxB h1 {
     font-size: 30px;
@@ -786,7 +787,6 @@
 
   .section_video_text .text_boxB {
     order: 2;
-    background: #fff;
   }
   .club_inner .video_main video {
     object-fit: contain;
