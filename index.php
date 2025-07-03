@@ -6,7 +6,7 @@ $yearList = getYear($DB);
 $announcementData = fetchData($DB, "announcements");
 $newsData = fetchData($DB, "news%");
 $historyYearData = getHistoryYearData_nolimit($DB);
-$lang = $_SESSION['lang'] ? $_SESSION['lang'] : 'KR';
+$lang = $_SESSION['lang'] ? $_SESSION['lang'] : 'KO';
 $langParam = $lang ? "&lang=" . urlencode($lang) : "";
 ?>
 

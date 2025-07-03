@@ -69,7 +69,6 @@ body.fixed {
   align-items: center;
   height: 100%;
   height: 72px;
-  border-bottom: 1px solid #999;
 }
 
 .header .menu {
@@ -484,6 +483,7 @@ body.fixed {
   .dropdown-mo {
     position: relative;
     margin-bottom: 32px;
+    color: #838383;
   }
   .dropdown-mo .dropdown-mo-btn {
     display: flex;
@@ -539,7 +539,19 @@ body.fixed {
     font-size: 9px;
   }
   .btn_gotop {
-    display: none;
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .btn_gotop > span {
+    width: 14px;
+    height: 14px;
+  }
+
+  .btn_gotop > p {
+    font-size: 11px;
   }
 
   .footer {

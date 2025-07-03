@@ -61,6 +61,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-right: 5rem;
 }
 .section_video .text.B {
   left: 55%;
@@ -155,7 +156,21 @@
 }
 
 .section_video .text a.arrow_right:hover p {
-  filter: invert(1);
+  background: none;
+}
+
+.section_video .text a.arrow_right:hover p::after {
+  content: "";
+  display: block;
+  border: 1px solid #fff;
+  width: 13px;
+  height: 13px;
+  border-left: none;
+  border-bottom: none;
+  transform: rotateZ(45deg) skew(-4deg, -4deg);
+  position: relative;
+  top: 5px;
+  left: 0px;
 }
 .section_video .text a.arrow_right:hover::before {
   content: "";
