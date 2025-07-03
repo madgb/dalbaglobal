@@ -103,19 +103,36 @@
             <li class="<?= strpos($current_page, 'newsroom.php') !== false ? 'active' : '' ?>"><a href="/main/newsroom.php">Newsroom</a></li>
             <li class="<?= $current_page == '/main/Shareholders_Club.php' ? 'active' : '' ?>"><a href="/main/Shareholders_Club.php">Shareholders' Club</a></li> -->
           </ul>
-            <div class="global">
+          <div class="right-dropdown-section">
+            <div class="global brand-site">
+              <button type="button" class="brand_btn">
+                <span class="header-icon icon-global"></span>
+                <span>Brand Site</span>
+                <span class="header-icon icon-down-arrow"></span>
+              </button>
+              <ul class="brand_ul header-dropdown-box">
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/">d'Alba Korea</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/">d'Alba USA</a></li>
+              </ul>
+            </div>
+            <div class="global lang-box">
               <button type="button" class="global_btn">
-                    <?php if($_SESSION['lang'] == 'EN') { ?>
+                    <!-- <?php if($_SESSION['lang'] == 'EN') { ?>
                     <span>ENG</span> 
                     <?php } else { ?>
                     <span>KOR</span> 
                     <?php } ?>
-              <p></p></button>
-              <ul class="global_ul">
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KR">KOR</button></li>
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><button class="langBtn" type="button" data-lang="EN">ENG</button></li>
+                    <p></p> -->
+                <span>Language</span>
+                <span class="header-icon icon-down-arrow"></span>
+              </button>
+              <ul class="global_ul header-dropdown-box">
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KO">Korean</button></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><button class="langBtn" type="button" data-lang="EN">English</button></li>
               </ul>
             </div>
+          </div>
+          <div class="mo-header-right-placeholder"></div>
       </div>
       </header>
       <!--  헤더 햄버거 버튼 눌렀을 때 나오는 사이드바 -->
@@ -123,17 +140,29 @@
         <div class="pc_sidebar__inner">
           <div class="pc_sidebar__header"><button type="button" class="x_btn"></button></div>
           <nav class="p_sidebar">
-          <div class="global_mo">
-              <button type="button" class="global_btn_mo">       
-                    <?php if($_SESSION['lang'] == 'EN') { ?>
+            <div class="dropdown-mo global_mo">
+              <button type="button" class="dropdown-mo-btn global_btn_mo">       
+                    <!-- <?php if($_SESSION['lang'] == 'EN') { ?>
                       ENG
                     <?php } else { ?>
                       KOR
-                    <?php } ?> <p></p></button>
-              <ul class="global_ul_mo">
-                  <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KR">KOR</button></li>
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><button class="langBtn" type="button" data-lang="EN">ENG</button></li>
-         
+                    <?php } ?> <p></p> -->
+                Language
+              </button>
+              <ul class="dropdown-ul-mo global_ul_mo">
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><button class="langBtn" type="button" data-lang="KO">Korean</button></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><button class="langBtn" type="button" data-lang="EN">English</button></li>
+              </ul>
+            </div>
+
+            <!-- 모바일 브랜드사이트 버튼 디자인 및 동작 작업중 -->
+            <div class="dropdown-mo brand-site">
+              <button type="button" class="dropdown-mo-btn brand-site-btn">       
+                Brand Site
+              </button>
+              <ul class="dropdown-ul-mo brand-site-ul">
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/">d'Alba Korea</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/">d'Alba USA</a></li>
               </ul>
             </div>
             <ul class="sidebar_ul">
