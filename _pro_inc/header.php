@@ -96,6 +96,7 @@
 
             <li><a href="#" data-target="section_16">ESG</a></li>
             <li><a href="#" data-target="section_19">Newsroom</a></li>
+            <li><a href="#" data-target="section_20">Shareholders' Club</a></li>
 
             <!-- <li><a href="#" data-target="section_15">Shareholders' Club</a></li> -->
 
@@ -111,8 +112,8 @@
                 <span class="header-icon icon-down-arrow"></span>
               </button>
               <ul class="brand_ul header-dropdown-box">
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/">d'Alba Korea</a></li>
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/">d'Alba USA</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/" target="_blank">d'Alba Korea</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/" target="_blank">d'Alba USA</a></li>
               </ul>
             </div>
             <div class="global lang-box">
@@ -161,8 +162,8 @@
                 Brand Site
               </button>
               <ul class="dropdown-ul-mo brand-site-ul">
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/">d'Alba Korea</a></li>
-                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/">d'Alba USA</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? '' : 'on'; ?>"><a href="https://dalba.co.kr/" target="_blank">d'Alba Korea</a></li>
+                <li class="<?php echo $_SESSION['lang'] == 'EN' ? 'on' : ''; ?>"><a href="https://dalba.com/" target="_blank">d'Alba USA</a></li>
               </ul>
             </div>
             <ul class="sidebar_ul">
@@ -198,6 +199,7 @@
               </li>
               <li><a href="#" data-target="section_16">ESG</a></li>
               <li><a href="#" data-target="section_19">Newsroom</a></li>
+              <li><a href="#" data-target="section_20">Shareholders' Club</a></li>
               
               <!-- <li class="<?= $current_page == '/main/ESG.php' ? 'active' : '' ?>"><a href="/main/ESG.php">ESG</a></li>
               <li class="<?= strpos($current_page, 'newsroom.php') !== false ? 'active' : '' ?>"><a href="/main/newsroom.php">Newsroom</a></li> -->

@@ -212,97 +212,65 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- 브랜드 끝 -->
 
     <!-- innovation start (섹션 08) -->
-    <div class="section innovation" id="section_08">
-      <div class="section_video_text">
-        <div class="video-background">
-          <video class="pc_show" controls muted playsinline loop>
-            <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
-          </video>
-          <video class="mo_show" controls muted playsinline loop preload="auto">
-            <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
-          </video>
-          <div class="text_overlay pc_show">
-            <h1>First Spray Serum</h1>
-            <div class="sub">
-              <span><?php echo $Spray_Serum_span ?></span>
-              <p><?php echo $Spray_Serum_p ?></p>
-            </div>
-          </div>
-
-          <div class="text_boxB text_overlay">
-            <h1>First Spray Serum</h1>
-            <div class="sub">
-              <span><?php echo $Spray_Serum_span ?></span>
-              <p><?php echo $Spray_Serum_p ?></p>
-            </div>
-          </div>
+    <div class="section section_video" id="section_08">
+      <div class="gra_back"></div>
+      <div class="video_main career pc_show">
+        <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-PC.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/First-Spray-Serum-MO.mp4" />
+        </video>
+      </div>
+      <div class="text_left">
+        <div class="text_box">
+          <h1>First Spray Serum</h1>
+          <h2><?php echo $Spray_Serum_span ?></h2>
+          <h3><?php echo $Spray_Serum_p ?></h3>
         </div>
       </div>
     </div>
-    <div class="section innovation">
-      <div class="section_video_text">
-        <div class="video-background">
-          <video class="pc_show" controls muted playsinline loop>
-            <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
-          </video>
-          <video class="mo_show" controls muted playsinline loop preload="auto">
-            <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
-          </video>
 
-          <div class="text_overlay pc_show">
-            <h1>
-              Waterful Tone-up<br />
-              Sunscreen
-            </h1>
-            <div class="sub">
-              <span><?php echo $Tone_up_Sunscreen_span ?></span>
-              <p><?php echo $Tone_up_Sunscreen_p ?></p>
-            </div>
-          </div>
-
-          <div class="text_boxB text_overlay">
-            <h1>
-              Waterful Tone-up<br />
-              Sunscreen
-            </h1>
-            <div class="sub">
-              <span><?php echo $Tone_up_Sunscreen_span ?></span>
-              <p><?php echo $Tone_up_Sunscreen_p ?></p>
-            </div>
-          </div>
+    <div class="section section_video">
+      <div class="gra_back"></div>
+      <div class="video_main career pc_show">
+        <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-PC.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/Toneup-Sunscreen-MO.mp4" />
+        </video>
+      </div>
+      <div class="text_left">
+        <div class="text_box">
+          <h1>Waterful Tone-up<br />Sunscreen</h1>
+          <h2><?php echo $Tone_up_Sunscreen_span ?></h2>
+          <h3><?php echo $Tone_up_Sunscreen_p ?></h3>
         </div>
       </div>
     </div>
-    <div class="section innovation">
-      <div class="section_video_text">
-        <div class="video-background">
-          <video class="pc_show" controls muted playsinline loop>
-            <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
-          </video>
-          <video class="mo_show" controls muted playsinline loop preload="auto">
-            <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
-          </video>
-          <div class="text_overlay pc_show">
-            <h1>
-              White Truffle<br />
-              Double Serum & Cream
-            </h1>
-            <div class="sub">
-              <span><?php echo $Double_Serum_span ?></span>
-              <p><?php echo $Double_Serum_p ?></p>
-            </div>
-          </div>
 
-          <div class="text_boxB text_overlay">
-            <h1>
-              White Truffle<br />
-              Double Serum & Cream
-            </h1>
-            <div class="sub">
-              <span><?php echo $Double_Serum_span ?></span>
-              <p><?php echo $Double_Serum_p ?></p>
-            </div>
-          </div>
+    <div class="section section_video">
+      <div class="gra_back"></div>
+      <div class="video_main career pc_show">
+        <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-PC.mp4" />
+        </video>
+      </div>
+      <div class="video_main career mo_show">
+        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+          <source type="video/mp4" data-src="./_img/Innovations/Double-Cream-MO.mp4" />
+        </video>
+      </div>
+      <div class="text_left">
+        <div class="text_box">
+          <h1>White Truffle<br />Double Serum & Cream</h1>
+          <h2><?php echo $Double_Serum_span ?></h2>
+          <h3><?php echo $Double_Serum_p ?></h3>
         </div>
       </div>
     </div>
@@ -573,6 +541,35 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           <?php } ?>
         </ul>
         <a href="/main/newsroom.php" class="btn go_history_btn mo_show"><?php echo $more ?></a>
+      </div>
+    </div>
+
+    <!-- Shareholder's club (section 20) -->
+    <div class="section section_video" id="section_20">
+      <div class="club_inner">
+        <div class="video_main pc_show">
+          <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" src="../_img/common/[stage2]Club_web.mp4" />
+          </video>
+        </div>
+        <div class="video_main mo_show">
+          <video class="video" autoplay muted playsinline loop data-autoplay="true">
+            <source type="video/mp4" src="../_img/common/[stage2]Club_mob.mp4" />
+          </video>
+        </div>
+        <div class="text text_box text_ani">
+          <h1>Shareholders' Club</h1>
+          <span><?php echo $Shareholders_span ?></span>
+          <p>
+            <?php echo $Shareholders_p ?>
+          </p>
+          <h4>
+            <?php echo $Shareholders_h4 ?>
+          </h4>
+          <!-- <a href="#" class="arrow_right">
+            <p></p>
+          </a> -->
+        </div>
       </div>
     </div>
     <div class="section fp-auto-height section_footer">

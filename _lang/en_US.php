@@ -12,10 +12,9 @@ $Fine_Dining = 'A fine dining destination rooted in the heritage of Alba in Pied
 $Spray_Serum_span = 'Spray Your Serum';
 $Spray_Serum_p = '4-in-1 solution for Toner, Essence, Serum,<br class="mo_show" /> and Make fixer';
 $Tone_up_Sunscreen_span = 'New era of Sun Product';
-$Tone_up_Sunscreen_p = 'Watery Touch of Dewy Pink Finishing Glow<br>
-–  for your Skin’s Natural Radiance';
+$Tone_up_Sunscreen_p = 'Watery Touch of Dewy Pink Finishing Glow – for your Skin’s Natural Radiance';
 $Double_Serum_span = 'DIY Skin Solution';
-$Double_Serum_p = ' Serum & Cream in one<br class="mo_show" /> – Customizable Blend For Your Skin';
+$Double_Serum_p = ' Serum & Cream in one – Customizable Blend For Your Skin';
 $Accumulated='Accumulated Sales';
 $Accumulated_Overs='Accumulated Oversea Sales';
 $Spray_Serums_Total='Spray Serums Total Sold';

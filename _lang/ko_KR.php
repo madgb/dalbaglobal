@@ -17,12 +17,9 @@ $Fine_Dining = ' 화이트 트러플의 최고 산지 피에몬테 주 알바 �
 $Spray_Serum_span = '세럼을 스프레이 하다';
 $Spray_Serum_p = '토너, 에센스, 세럼, 메이크업 픽서 제품을 미스트 하나로 4-in-1';
 $Tone_up_Sunscreen_span = '선크림을 새롭게 정의하다';
-$Tone_up_Sunscreen_p = '바르는 순간 수분감 넘치는 촉촉함<br />
-              피부 본연의 빛처럼 자연스러운<br class="mo_show" />
-              ‘핑크빛 물광’ 톤업 메이크업 효과';
+$Tone_up_Sunscreen_p = '바르는 순간 수분감 넘치는 촉촉함 피부 본연의 빛처럼 자연스러운 ‘핑크빛 물광’ 톤업 메이크업 효과';
 $Double_Serum_span = '나만의 DIY 스킨 솔루션';
-$Double_Serum_p = '세럼과 크림을 하나로,<br class="mo_show" />
-내 피부 컨디션 별 커스텀 케어';
+$Double_Serum_p = '세럼과 크림을 하나로, 내 피부 컨디션별 커스텀 케어';
 $Accumulated='누적 매출';
 $Accumulated_Overs='누적 수출';
 $Spray_Serums_Total='스프레이 세럼 누적 판매 수';
