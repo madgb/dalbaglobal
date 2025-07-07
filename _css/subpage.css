@@ -805,12 +805,13 @@
   }
   .club_inner .video_main video {
     object-fit: contain;
+    top: -60px;
   }
   .club_inner .text_box {
     left: 0;
     transform: translateX(0);
     padding: 0 20px;
-    top: 55%;
+    top: 46%;
   }
   .club_inner .text_box h1 {
     font-size: 32px;

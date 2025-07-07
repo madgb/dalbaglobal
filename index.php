@@ -69,7 +69,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="video_main career mo_show">
-        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+        <video class="video sm-video" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]White truffle_mob.mp4" />
         </video>
       </div>
@@ -139,16 +139,14 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="video_main career mo_show">
-        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+        <video class="video sm-video downward-video" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/dalba_brand_mo.mp4" />
         </video>
       </div>
       <div class="text">
         <h2 class="fade-up">d’Alba</h2>
         <p class="fade-up">
-          Premium Vegan Skincare Brand
-        </p>
-        <p class="fade-up">
+          <b>Premium Vegan Skincare Brand</b>
           <?php echo $Skincare_Brand ?>
         </p>
         <a href="https://brand.naver.com/dalba" class="arrow_right fade-up" target="_blank">
@@ -165,16 +163,14 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="video_main career mo_show">
-        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+        <video class="video sm-video downward-video" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/veganery_mo.mp4" />
         </video>
       </div>
       <div class="text">
         <h2 class="fade-up">Veganery</h2>
         <p class="fade-up">
-          Contemporary Inner Beauty Brand
-        </p>
-        <p class="fade-up">
+          <b>Contemporary Inner Beauty Brand</b>
           <?php echo $Beauty_Brand ?>
         </p>
         <a href="https://brand.naver.com/veganery" class="arrow_right fade-up" target="_blank">
@@ -191,16 +187,14 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="video_main career mo_show">
-        <video class="video" autoplay muted playsinline loop data-autoplay="true">
+        <video class="video sm-video downward-video" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/truffle_de_alba_mo.mp4" />
         </video>
       </div>
       <div class="text">
         <h2 class="fade-up">Truffle di Alba</h2>
         <p class="fade-up">
-          White Truffle-based Italian Fine Dining
-        </p>
-        <p class="fade-up">
+          <b>White Truffle-based Italian Fine Dining</b>
           <?php echo $Fine_Dining ?>
         </p>
         <a href="https://www.instagram.com/truffle_di_alba/" class="arrow_right fade-up" target="_blank">
@@ -285,13 +279,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           </video>
         </div>
         <div class="video_main career mo_show">
-          <video class="video " autoplay muted playsinline loop data-autoplay="true">
+          <video class="video mission-01" autoplay muted playsinline loop data-autoplay="true">
             <source type="video/mp4" data-src="./_img/common/[stage1]Mission_mob.mp4" />
           </video>
         </div>
         <div class="text">
-          <h2>Mission</h2>
-          <p>
+          <h2 class="fade-up">Mission</h2>
+          <p class="fade-up">
             <?php echo $main_mission ?>
           </p>
         </div>
@@ -310,11 +304,11 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           </video>
         </div>
         <div class="text">
-          <h2>Career</h2>
-          <p>
+          <h2 class="fade-up">Career</h2>
+          <p class="fade-up">
             <?php echo $Career_text ?>
           </p>
-          <a href="https://dalba.career.greetinghr.com/dalbaglobal"
+          <a class="fade-up" href="https://dalba.career.greetinghr.com/dalbaglobal"
             target="_blank"><span><?php echo $Career_button ?></span>
             <p></p>
           </a>
@@ -464,8 +458,8 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="text B text_ani">
-        <h2>Environment</h2>
-        <h6>
+        <h2 class="fade-up">Environment</h2>
+        <h6 class="fade-up">
           <b><?php echo $Environment_b ?></b>
           <p>
             <?php echo $Environment_p ?>
@@ -485,8 +479,8 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="text B text_ani">
-        <h2>Social</h2>
-        <h6>
+        <h2 class="fade-up">Social</h2>
+        <h6 class="fade-up">
           <b><?php echo $Social_b ?></b>
           <p>
             <?php echo $Social_p ?>
@@ -506,8 +500,8 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
       <div class="text B text_ani">
-        <h2>Governance</h2>
-        <h6>
+        <h2 class="fade-up">Governance</h2>
+        <h6 class="fade-up">
           <b><?php echo $Governance_b ?></b>
           <p><?php echo $Governance_p ?></p>
         </h6>
@@ -674,12 +668,28 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
   function loadVideosInSection(section) {
     const isMobile = isMobileDevice();
     const classToLoad = isMobile ? ".mo_show" : ".pc_show";
-
     const sources = section.querySelectorAll(`${classToLoad} > source[data-src]`);
+
     sources.forEach(source => {
       const video = source.closest("video");
-      if (source.src && video.readyState < 3) {
-        video.play().catch(() => { });
+      const dataSrc = source.getAttribute("data-src");
+
+      if (!source.src && dataSrc) {
+        source.src = dataSrc;
+        video.load();
+      }
+
+      // 안전하게 재생 시도 (canplaythrough 이벤트 기다림)
+      if (video.readyState < 3) {
+        video.addEventListener('canplaythrough', () => {
+          video.play().catch(err => {
+            console.warn("Video play failed:", err);
+          });
+        }, { once: true });
+      } else {
+        video.play().catch(err => {
+          console.warn("Video play failed:", err);
+        });
       }
     });
   }
