@@ -201,7 +201,8 @@ body.scrolled {
 }
 
 .slide03 .text a p {
-  background: url(../_img/common/icon_arrow_right.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_arrow_right.svg) no-repeat center center /
+    contain;
   width: 24px;
   height: 24px;
   min-width: 24px;
@@ -537,20 +538,23 @@ body.scrolled {
 }
 
 .section_2 .ir_inner .ir_ul li .content span {
-  background: url(../_img/common/icon_content_right.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_content_right.svg) no-repeat center center /
+    contain;
   width: 40px;
   height: 40px;
   display: inline-block;
 }
 
 .section_2 .ir_inner .ir_ul li .content .plus {
-  background: url(../_img/common/icon_plus.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_plus.svg) no-repeat center center /
+    contain;
   width: 40px;
   height: 40px;
 }
 
 .section_2 .ir_inner .ir_ul li .content.active .plus {
-  background: url(../_img/common/icon_minus.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_minus.svg) no-repeat center center /
+    contain;
 }
 
 .section_2 .ir_inner .ir_ul li .content.active p {
@@ -842,16 +846,20 @@ body.scrolled {
 }
 
 .pagination li.first {
-  background: url(../_img/common/icon_pagi_first.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_pagi_first.svg) no-repeat center center /
+    contain;
 }
 .pagination li.prev {
-  background: url(../_img/common/icon_pagi_prev.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_pagi_prev.svg) no-repeat center center /
+    contain;
 }
 .pagination li.next {
-  background: url(../_img/common/icon_pagi_next.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_pagi_next.svg) no-repeat center center /
+    contain;
 }
 .pagination li.last {
-  background: url(../_img/common/icon_pagi_last.svg) no-repeat center center / contain;
+  background: url(../_img/common/icon_pagi_last.svg) no-repeat center center /
+    contain;
 }
 /* ir 세부페이지 */
 span.gray_badge {
@@ -1408,6 +1416,11 @@ header.hidden {
 
   .video_main video.mission-01 {
     padding-top: 5rem;
+  }
+
+  .career .text b {
+    display: block;
+    margin-bottom: 8px;
   }
 }
 .swiper-container {

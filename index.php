@@ -79,8 +79,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           <b><?php echo $Truffle_text_b ?></b>
           <?php echo $Truffle_text_p ?>
         </p>
-        <a href="https://dalba.co.kr/main/html.php?htmid=story/white-truffle.html" class="arrow_right fade-up"
-          target="_blank">
+        <a href="https://dalba.com/pages/page-1" class="arrow_right fade-up" target="_blank">
           LEARN MORE
           <p></p>
         </a>
@@ -293,19 +292,23 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- 커리어 시작 (섹션 12) -->
-    <div class="section" id="section_12">
+    <div class="section career" id="section_12">
       <div class="slide03 career" id="career">
-        <div class="video_main">
-          <video class="video pc_show object-left" autoplay muted playsinline loop data-autoplay="true">
+        <div class="video_main career pc_show">
+          <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
             <source type="video/mp4" data-src="./_img/common/[stage1]Career_web.mp4" />
           </video>
-          <video class="video mo_show " autoplay muted playsinline loop data-autoplay="true">
+        </div>
+        <div class="video_main career mo_show">
+          <video class="video" autoplay muted playsinline loop data-autoplay="true">
             <source type="video/mp4" data-src="./_img/common/[stage1]Career_mob.mp4" />
           </video>
         </div>
+
         <div class="text">
           <h2 class="fade-up">Career</h2>
           <p class="fade-up">
+            <b><?php echo $Career_text_b ?></b>
             <?php echo $Career_text ?>
           </p>
           <a class="fade-up" href="https://dalba.career.greetinghr.com/dalbaglobal"

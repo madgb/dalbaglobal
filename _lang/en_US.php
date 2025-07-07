@@ -1,12 +1,12 @@
 <?php
 $main_mission = 'Global No.1  Pioneer of the Premium Beauty Lifestyle';
-$Career_text = 'Sharing & Growing together
-Join our journey of “Inspiring Global Beauty with the Finest Premium Products”';
+$Career_text_b = 'Sharing & Growing together';
+$Career_text = 'Join our journey of “Inspiring Global Beauty with the Finest Premium Products”';
 $Career_button = 'Confirm the hiring';
 $Piedmont_text = 'd’Alba’s inspiration came from the pristine nature of Alba, the motherland of the finest Italian white truffles.';
 $Truffle_text_b = 'Diamonds Beneath the Soil - White Truffle';
 $Truffle_text_p = 'd’Alba proudly selects the finest antioxidant-rich Italian white truffles from Alba. Experience remarkable skin transformation with our Trufferrol™ and innovative 3CMTE technology.';
-$Skincare_Brand='A premium vegan skincare company harnessing the natural power of white truffle';
+$Skincare_Brand = 'Experience remarkable skin transformation with our Trufferrol tm and innovative 3CMTE technology';
 $Beauty_Brand = 'Contemporary Beauty Supplement Brand recognized with Grand Prix Award for its premium ingredients first in Korea';
 $Fine_Dining = 'A fine dining destination rooted in the heritage of Alba in Piedmont, home to the world’s most exquisite white truffles';
 $Spray_Serum_span = 'Spray Your Serum';
@@ -25,7 +25,7 @@ $M_units='M units';
 $Environment_b = 'Together with the Earth';
 $Environment_p = 'We are fully committed to building a sustainable environment with Italian V-label Vegan eco-friendly Certificate and FSC Forest Stewardship Council Standards.';
 $Social_b='Together for the Society';
-$Social_p='We are fully dedicated to make d’Alba a better place to work with & work for - “Superwomen-Kit” for the single-parents, 10k product donation for Newlife Welfare Foundation, Ombudsman program for employees, full time hiring ratio of 90%, and 0% of 3 year industrial accident';
+$Social_p='We are fully dedicated to make d’Alba a better place to work with & work for - “Superwomen-Kit” for the single-parents, 10k product donation for Newlife Welfare Foundation, Ombudsman program for employees, and 0% of 3 year industrial accident';
 $Governance_b ='Together alongside Shareholders';
 $Governance_p='We aim to maximize corporate value via industry-leading shareholder benefit programs – industry-first shareholder discount programs, competitive dividend payout ratio, governance transparency committee, and ethical management policies';
 $Shareholders_span = 'd’Alba’s Shareholders’ Club';

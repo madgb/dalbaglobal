@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer__inner">
-        <div class="footer_logo"><img src="/_img/common/logo_footer.svg" alt="" /></div>
+        <div class="footer_logo"><span></span></div>
         <p>
         주식회사 달바글로벌 서울특별시 마포구 마포대로 78, 12층<br class="mo_show" />
         (도화동, 자람빌딩) (04031)<br />
