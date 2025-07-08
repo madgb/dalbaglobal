@@ -62,6 +62,7 @@
   flex-direction: column;
   gap: 40px;
   padding-right: 5rem;
+  max-width: 690px;
 }
 .section_video .text.B {
   left: 55%;
@@ -82,6 +83,7 @@
   line-height: 150%; /* 30px */
   display: flex;
   flex-direction: column;
+  word-break: break-word;
 }
 .section_video .text p b {
   margin-bottom: 8px;
@@ -485,15 +487,6 @@
   line-height: 150%; /* 30px */
 }
 
-.club_inner .text_box p {
-  margin-top: 8px;
-  color: #505050;
-  font-family: "Pretendard";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-}
-
 .club_inner .text_box h4 {
   color: #999;
   font-family: "Pretendard";
@@ -640,10 +633,6 @@
   .section_video_text {
     gap: 20px;
     width: 100%;
-  }
-  .club_inner .text_box {
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 
@@ -806,12 +795,6 @@
   .club_inner .video_main video {
     object-fit: contain;
     top: -60px;
-  }
-  .club_inner .text_box {
-    left: 0;
-    transform: translateX(0);
-    padding: 0 20px;
-    top: 46%;
   }
   .club_inner .text_box h1 {
     font-size: 32px;

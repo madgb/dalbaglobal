@@ -11,7 +11,7 @@ $Career_button = '채용 확인하기';
 
 $Piedmont_text = '화이트 트러플의 산지로 알려진 청정지역, 이탈리아 Piedmont 주 Alba 지역에서 영감을 받아 탄생한 d’Alba';
 $Truffle_text_b = '땅 속의 다이아몬드 화이트 트러플';
-$Truffle_text_p = 'd\'Alba만의 특허성분 Trufferol tm과 3cmte공법을 통해 놀라운 변화를 경험해 보세요';
+$Truffle_text_p = 'd\'Alba만의 특허성분 Trufferrol™과 3cmte공법을 통해 놀라운 변화를 경험해 보세요';
 $Skincare_Brand='화이트 트러플을 전 제품의 핵심 원료로 한 프리미엄 비건 스킨케어 브랜드';
 $Beauty_Brand = '한국 최초로 원료 부분 대상인 그랑프리를 수상한 프리미엄 원료를 기반으로 한 이너 뷰티 브랜드';
 $Fine_Dining = '화이트 트러플의 최고 산지 피에몬테 주 알바 지역을 모티브로 서비스 중인, 한남동에 위치한 파인 다이닝';

@@ -79,7 +79,8 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           <b><?php echo $Truffle_text_b ?></b>
           <?php echo $Truffle_text_p ?>
         </p>
-        <a href="https://dalba.com/pages/page-1" class="arrow_right fade-up" target="_blank">
+        <a href="<?= $lang == 'KO' ? 'https://dalba.co.kr/main/html.php?htmid=story/white-truffle.html' : 'https://dalba.com/pages/page-1' ?>"
+          class="arrow_right fade-up" target="_blank">
           LEARN MORE
           <p></p>
         </a>
@@ -270,7 +271,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- innovation end -->
 
     <!-- 미션 시작 (섹션 11) -->
-    <div class="section" id="section_11">
+    <div class="section section_video" id="section_11">
       <div class="slide02 mission" id="mission">
         <div class="video_main career pc_show">
           <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -292,7 +293,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- 커리어 시작 (섹션 12) -->
-    <div class="section career" id="section_12">
+    <div class="section section_video career" id="section_12">
       <div class="slide03 career" id="career">
         <div class="video_main career pc_show">
           <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -462,12 +463,10 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Environment</h2>
-        <h6 class="fade-up">
+        <p class="fade-up">
           <b><?php echo $Environment_b ?></b>
-          <p>
-            <?php echo $Environment_p ?>
-          </p>
-        </h6>
+          <?php echo $Environment_p ?>
+        </p>
       </div>
     </div>
     <div class="section section_video esg-section">
@@ -483,12 +482,10 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Social</h2>
-        <h6 class="fade-up">
+        <p class="fade-up">
           <b><?php echo $Social_b ?></b>
-          <p>
-            <?php echo $Social_p ?>
-          </p>
-        </h6>
+          <?php echo $Social_p ?>
+        </p>
       </div>
     </div>
     <div class="section section_video esg-section">
@@ -504,10 +501,10 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Governance</h2>
-        <h6 class="fade-up">
+        <p class="fade-up">
           <b><?php echo $Governance_b ?></b>
-          <p><?php echo $Governance_p ?></p>
-        </h6>
+          <?php echo $Governance_p ?>
+        </p>
       </div>
     </div>
     <!-- ESG section end -->
@@ -555,14 +552,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
           </video>
         </div>
         <div class="text text_box text_ani">
-          <h1>Shareholders' Club</h1>
-          <span><?php echo $Shareholders_span ?></span>
-          <p>
+          <h2 class="fade-up">Shareholders' Club</h2>
+          <p class="fade-up">
+            <b><?php echo $Shareholders_span ?></b>
             <?php echo $Shareholders_p ?>
+            <h4 class="fade-up"><?php echo $Shareholders_h4 ?></h4>
           </p>
-          <h4>
-            <?php echo $Shareholders_h4 ?>
-          </h4>
+
           <!-- <a href="#" class="arrow_right">
             <p></p>
           </a> -->

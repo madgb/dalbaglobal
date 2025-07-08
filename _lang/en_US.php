@@ -2,13 +2,13 @@
 $main_mission = 'Global No.1  Pioneer of the Premium Beauty Lifestyle';
 $Career_text_b = 'Sharing & Growing together';
 $Career_text = 'Join our journey of “Inspiring Global Beauty with the Finest Premium Products”';
-$Career_button = 'Confirm the hiring';
+$Career_button = 'Learn More';
 $Piedmont_text = 'd’Alba’s inspiration came from the pristine nature of Alba, the motherland of the finest Italian white truffles.';
 $Truffle_text_b = 'Diamonds Beneath the Soil - White Truffle';
 $Truffle_text_p = 'd’Alba proudly selects the finest antioxidant-rich Italian white truffles from Alba. Experience remarkable skin transformation with our Trufferrol™ and innovative 3CMTE technology.';
-$Skincare_Brand = 'Experience remarkable skin transformation with our Trufferrol tm and innovative 3CMTE technology';
-$Beauty_Brand = 'Contemporary Beauty Supplement Brand recognized with Grand Prix Award for its premium ingredients first in Korea';
-$Fine_Dining = 'A fine dining destination rooted in the heritage of Alba in Piedmont, home to the world’s most exquisite white truffles';
+$Skincare_Brand = 'Experience remarkable skin transformation with our Trufferrol™ and innovative 3CMTE technology.';
+$Beauty_Brand = 'Contemporary Beauty Supplement Brand recognized with Grand Prix Award for its premium ingredients first in Korea.';
+$Fine_Dining = 'A fine dining destination rooted in the heritage of Alba in Piedmont, home to the world’s most exquisite white truffles.';
 $Spray_Serum_span = 'Spray Your Serum';
 $Spray_Serum_p = '4-in-1 solution for Toner, Essence, Serum,<br class="mo_show" /> and Make fixer';
 $Tone_up_Sunscreen_span = 'New era of Sun Product';

@@ -132,11 +132,11 @@ body.scrolled {
   gap: 40px;
   justify-content: center;
   max-width: 673px;
-  width: 100%;
   position: absolute;
   left: 53%;
   top: 50%;
   transform: translateY(-50%);
+  padding-right: 5rem;
 }
 
 .slide01 .text h1 {
