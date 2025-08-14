@@ -220,35 +220,64 @@ $(".btn_gotop").click(function () {
 //   });
 // });
 // JavaScript
-var swiper = new Swiper(".swiper-container", {
-  speed: 500,
+// var swiper = new Swiper(".swiper-container", {
+//   speed: 500,
+//   direction: "vertical",
+//   // mo
+//   simulateTouch: true, // 터치 이벤트 허용
+//   touchRatio: 1, // 기본값 1 (손가락 따라 반응)
+//   touchReleaseOnEdges: true, // 끝에서 자연스러운 스크롤 허용
+//   // allowTouchMove: false,
+//   // mo
+//   mousewheel: {
+//     forceToAxis: true,
+//     // releaseOnEdges: true,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   slidesPerView: 1,
+//   // observer: true, // 변경 감지
+//   // observeParents: true, // 부모 요소 변경도 감지
+//   on: {
+//     reachEnd: function () {
+//       allowPageScroll = false; // 마지막 슬라이드에서 바로 스크롤되지 않도록 차단
+//       swiper.mousewheel.enable();
+//     },
+//     reachBeginning: function () {
+//       swiper.mousewheel.disable();
+//     },
+//     slideChange: function () {
+//       allowPageScroll = false;
+//       swiper.mousewheel.enable();
+//     },
+//   },
+// });
+
+const swiper = new Swiper(".swiper-container", {
   direction: "vertical",
-  // mo
-  simulateTouch: true, // 터치 이벤트 허용
-  touchRatio: 1, // 기본값 1 (손가락 따라 반응)
-  touchReleaseOnEdges: true, // 끝에서 자연스러운 스크롤 허용
-  // allowTouchMove: false,
-  // mo
+  speed: 500,
+  simulateTouch: true,
+  touchRatio: 1,
+  touchReleaseOnEdges: true,
   mousewheel: {
     forceToAxis: true,
-    // releaseOnEdges: true,
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   slidesPerView: 1,
-  // observer: true, // 변경 감지
-  // observeParents: true, // 부모 요소 변경도 감지
   on: {
-    reachEnd: function () {
-      allowPageScroll = false; // 마지막 슬라이드에서 바로 스크롤되지 않도록 차단
+    reachEnd() {
+      allowPageScroll = false;
       swiper.mousewheel.enable();
     },
-    reachBeginning: function () {
+    reachBeginning() {
       swiper.mousewheel.disable();
     },
-    slideChange: function () {
+    slideChange() {
       allowPageScroll = false;
       swiper.mousewheel.enable();
     },
@@ -265,7 +294,15 @@ window.addEventListener("wheel", function (event) {
 
   if (window.scrollY === 0) {
     if (event.deltaY < 0) {
-      swiper.mousewheel.enable();
+      if (
+        typeof swiper !== "undefined" &&
+        swiper.mousewheel &&
+        typeof swiper.mousewheel.enable === "function"
+      ) {
+        swiper.mousewheel.enable();
+      } else {
+        console.warn("⚠️ swiper.mousewheel이 아직 초기화되지 않았습니다");
+      }
     } else if (event.deltaY > 0) {
       if (swiper.isEnd) {
         if (!allowPageScroll) {
@@ -915,7 +952,7 @@ document.querySelectorAll("a[data-target]").forEach((anchor) => {
     const targetSection = document.getElementById(targetId);
 
     if (targetSection) {
-      const sections = document.querySelectorAll(".section");
+      const sections = document.querySelectorAll(".scroll-unique-class");
       const index = Array.from(sections).indexOf(targetSection);
       if (index !== -1) {
         fullpage_api.moveTo(index + 1);

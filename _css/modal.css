@@ -1,0 +1,222 @@
+.modal {
+  /* display: none; */
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/      */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  padding: 0;
+}
+
+.modal-content {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+.modal-content a,
+.modal-content p,
+.modal-content div {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.modal-inner.en {
+  display: none;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  z-index: 99999 !important; /* 반드시 높게 */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  z-index: 100000 !important; /* 내부 콘텐츠가 위에 보이도록 */
+  background-color: white;
+  width: 80%;
+  margin: 100px auto;
+  border: 1px solid #888;
+  opacity: 1;
+}
+
+.modal-inner {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  color: #000;
+  padding: 20px;
+}
+
+.modal-content h1 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+  font-family: "URWClassico";
+}
+
+.modal-inner h2 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.modal-inner h2.bold {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modal-inner .section {
+  margin-bottom: 20px;
+}
+
+.modal-inner h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  width: 15%;
+}
+
+.modal-inner p {
+  font-size: 15px;
+}
+
+.modal-inner a {
+  color: #000;
+  word-break: break-all;
+}
+
+.modal-inner .section {
+  display: flex;
+  gap: 33px;
+  border-top: 1px solid #8f8f8f;
+  padding-top: 2rem;
+}
+
+.modal-inner .section p {
+  line-height: 2rem;
+}
+
+.modal-inner .section.first {
+  border-top-width: 2px;
+}
+
+.modal-inner .section .section-content {
+  width: 80%;
+}
+
+.modal-inner .section .section-content p.black-bg {
+  max-width: 90%;
+}
+
+.ml-05 {
+  margin-left: 5px;
+}
+
+.lang-select {
+  position: absolute;
+  top: 19px;
+  right: 10px;
+}
+
+.lang-select select {
+  padding: 2px 5px 2px 7px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    padding: 0;
+  }
+
+  .modal-content {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .modal-inner h2 {
+    font-size: 19px;
+  }
+
+  .modal-inner h3 {
+    font-size: 14px;
+    min-width: 62px;
+    width: 30%;
+  }
+
+  .modal-inner p {
+    font-size: 12px;
+  }
+
+  .modal-inner .section {
+    gap: 5px;
+  }
+
+  .modal-inner .section .section-content p.black-bg {
+    flex-flow: column;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    align-items: flex-start;
+  }
+
+  .modal-inner .section .section-content p.black-bg a {
+    width: 65%;
+    padding: 0;
+    text-align: center;
+    background: #000;
+    color: #fff;
+  }
+}

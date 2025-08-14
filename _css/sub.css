@@ -1070,14 +1070,11 @@ header.hidden {
   }
   .slide02 .text {
     left: 0;
-    padding: 0 20px;
     top: 72%;
     gap: 20px;
   }
   .slide03 .text {
     transform: none;
-    /* height: 50%; */
-    padding: 66px 20px 0;
     gap: 16px;
     left: 0px;
     justify-content: start;
@@ -1421,6 +1418,10 @@ header.hidden {
   .career .text b {
     display: block;
     margin-bottom: 8px;
+  }
+
+  .esg-p-left-padding {
+    padding-left: 20px;
   }
 }
 .swiper-container {

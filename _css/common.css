@@ -153,8 +153,9 @@ body.fixed {
   line-height: 150%;
   text-transform: uppercase;
 }
-.header__inner .logo {
+.header__inner .logo img {
   width: 182.598px;
+  margin: 0 auto;
 }
 
 .ham_btn.active {
@@ -569,8 +570,9 @@ body.fixed {
   .footer_logo {
     width: 145.801px;
   }
-  .header__inner .logo {
+  .header__inner .logo img {
     width: 149.398px;
+    margin: 0 auto;
   }
   .global_ul li {
     padding: 8px 12px;

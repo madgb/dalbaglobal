@@ -8,6 +8,7 @@ function fetchData($DB, $bbs_cd, $offset = 0, $limit = 5) {
   $total_count = $total_result ? intval($total_result['total']) : 0;
 
   // 게시물 조회
+  // SELECT *, COALESCE(CAST(w_dt AS DATETIME), '2025-06-12 00:00:00') AS w_ymd, COALESCE(w_year, '2025') AS w_year FROM 
   $query = "SELECT * FROM tb_board_info WHERE bbs_cd LIKE '$bbs_cd' ORDER BY w_dt DESC LIMIT $offset, $limit";
   $list = $DB->get_results($query);
   $posts = [];
@@ -42,7 +43,7 @@ function fetchData($DB, $bbs_cd, $offset = 0, $limit = 5) {
 }
 
 function getYear($DB) {
-  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'announcements' ORDER BY w_dt DESC";
+  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'announcements' ORDER BY w_year DESC";
   $result = $DB->get_results($sql);
   $years = [];
   foreach($result['result'] as $r) {
@@ -128,7 +129,7 @@ function getHistoryMonthData($DB, $year) {
 function getHistoryMonthData_eng($DB, $year) {
   $sql = " SELECT DISTINCT(subject_eng) FROM tb_board_info WHERE bbs_cd LIKE 'history' AND w_year = '".$year."' ORDER BY w_dt DESC";
   $result = $DB->get_results($sql);
-  $posts = [];
+  $months = [];
   foreach($result['result'] as $r) {
     $months[] = $r['subject_eng'];
   }

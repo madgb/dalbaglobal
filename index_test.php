@@ -41,7 +41,7 @@ function fetchData($DB, $bbs_cd, $offset = 0, $limit = 5) {
 }
 
 function getYear($DB) {
-  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'announcements' ORDER BY w_dt DESC";
+  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'announcements' ORDER BY w_year DESC";
   $result = $DB->get_results($sql);
   $years = [];
   foreach($result['result'] as $r) {
@@ -92,7 +92,7 @@ function fetchYearData($DB, $bbs_cd, $year, $offset = 0, $limit = 5) {
 }
 
 function getHistoryYearData($DB) {
-  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'history' ORDER BY w_dt DESC";
+  $sql = "SELECT DISTINCT(w_year) FROM tb_board_info WHERE bbs_cd LIKE 'history' ORDER BY w_year DESC";
   $result = $DB->get_results($sql);
   $years = [];
   foreach($result['result'] as $r) {

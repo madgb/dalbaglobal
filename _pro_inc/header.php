@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- NiceSelect -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
@@ -44,7 +47,9 @@
     <link rel="stylesheet" href="/_css/sub.css" />
     <link rel="stylesheet" href="/_css/attribute.css" />
     <link rel="stylesheet" href="/_css/subpage.css" />
+    <link rel="stylesheet" href="/_css/modal.css" />
     <script src="/_js/common.js" defer></script>
+    <script src="/_js/modal.js" defer></script>
    <?php 
     if($_SESSION['lang'] == "EN"){
       @require_once $_SERVER["DOCUMENT_ROOT"]."/_lang/en_US.php";
@@ -55,12 +60,108 @@
   </head>
 
   <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="lang-select">
+            <select id="langToggle">
+              <option value="ko">Korean</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <h1>d’Alba GLOBAL</h1>    
+          <div class="modal-inner ko">    
+            <h2>주식회사 달바글로벌</h2>
+            <h2 class="bold">2025년 2분기 잠정 실적 컨퍼런스콜 안내</h2>
+
+            <div class="section first">
+              <h3>01 진행 일시</h3>
+              <div class="section-content">
+                <p>국문 컨퍼런스콜 : </p>
+                <p>2025년 8월 8일 (금) 16:30 KST ~ 17:29 KST</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>02 접속 방법</h3>
+              <div class="section-content">
+                <p class="black-bg">
+                  <a href="https://irsvc.teletogether.com/dalba/dalba.php?c=dalba&y=3034" target="_blank">
+                    <img src="./_img/modal/modal_link_ko.png" />
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>03 진행 방법</h3>
+              <div class="section-content">
+                <p>2025년 2분기 경영 실적 관련 설명 후 Q&A 진행 예정</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>04 기타 사항</h3>
+              <div class="section-content">
+                <p>2025년 2분기 잠정 경영 실적 설명 자료는</p>
+                <p>금융감독원 전자공시시스템 (<a href="https://dart.fss.or.kr" target="_blank">dart.fss.or.kr</a>)의</p>
+                <p>잠정실적 공시 첨부파일 및 당사 홈페이지 (<a href="https://www.dalbaglobal.com" target="_blank">www.dalbaglobal.com</a>)의</p>
+                <p>‘Investors’ → ‘IR Material’ 게시판을 참고 부탁드립니다.</p>
+              </div>
+            </div>
+          </div>
+            
+          <div class="modal-inner en">    
+            <h2>d'Alba Global Co., Ltd.</h2>
+            <h2 class="bold">2025 2Q PRELIMINARY EARNINGS CONFERENCE CALL NOTICE</h2>
+
+            <div class="section first">
+              <h3>01 Date · Time</h3>
+              <div class="section-content">
+                <p>(ENG) Conference Call :</p>
+                <p>2025.Aug 8th(Fri) 17:30 KST - 18:30 KST</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>02 How To Join</h3>
+              <div class="section-content">
+                <p class="black-bg">
+                  <a href="https://irsvc.teletogether.com/dalbaglobal/dalbaglobal.php?c=dalbaglobal&y=3101" target="_blank">
+                    <img src="./_img/modal/modal_link_en.png" />
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>03 Procedures</h3>
+              <div class="section-content">
+                <p>Presentation on '25.2Q preliminary results</p>
+                <p>followed by Q&A session</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>04 Additional Info</h3>
+              <div class="section-content">
+                <p>Please refer to the '25.2Q preliminary earnings presentation</p>
+                <p>available as an attachment on the disclosure</p>
+                <p>at the DART system (<a href="https://dart.fss.or.kr" target="_blank">dart.fss.or.kr</a>)and</p>
+                <p>on our website (<a href="https://www.dalbaglobal.com" target="_blank">www.dalbaglobal.com</a>)</p>
+                <p>under the 'Investors' → 'IR Materials'.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     <div id="wrap">
       <header class="header white">
           <div class="header__inner">
             <button type="button" class="ham_btn"></button>
             <a href="/" class="logo">
-              <img src="/_img/common/logo.svg" alt="" />
+              <img src="/_img/common/logo_final.svg" alt="logo" />
             </a>
           <ul class="menu">
             <li class="<?= $current_page == '/' ? 'active' : '' ?>"><a href="/">Home</a></li>

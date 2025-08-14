@@ -1,5 +1,8 @@
 <?PHP 
 include_once $_SERVER['DOCUMENT_ROOT']."/_pro_inc/sameSite.php";
+session_start_samesite();
+
+require_once __DIR__ . '/dbConn.php';
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('display_errors', 0);
 ini_set('log_errors', 1);
@@ -9,7 +12,21 @@ ini_set("session.gc_maxlifetime", 3600000);	// 세션 가비지 컬렉션(로그
 // session_cache_limiter("private");						// session_start() 전에 위치
 session_cache_limiter("nocache");
 
-session_start_samesite();
+// session_start_samesite();
+
+setcookie("test_cookie", "cookie_value", time() + 3600, "/");
+
+// 언어 세션 기본값 설정
+if (isset($_GET['lang'])) {
+  $lang = strtoupper($_GET['lang']);
+  if (in_array($lang, ['EN', 'KO'])) {
+    $_SESSION['lang'] = $lang;
+  }
+}
+if (!isset($_SESSION['lang'])) {
+  $_SESSION['lang'] = 'KO'; // 기본 언어: KO
+}
+
 date_default_timezone_set('Asia/Seoul');
 header("Pragma: no-cache");
 header("Cache-Control: no-cache,must-revalidate");
@@ -42,7 +59,7 @@ try {
 	// // echo "KKKK";
 	// print_r($gconnet);
 
-	mysqli_query($gconnet,"set names UTF8");
+	mysqli_query($gconnet, "set names UTF8");
 
 	$UTIL = new UTIL();
 

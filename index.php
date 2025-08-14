@@ -12,7 +12,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
 
 <main class="main">
   <div id="fullpage">
-    <div class="section">
+    <div class="scroll-unique-class section">
       <div class="slide01 home" id="home">
         <div class="video_main">
           <video class="video" autoplay muted playsinline loop data-autoplay="true">
@@ -28,7 +28,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
     </div>
     <!-- 헤리티지 시작 -->
-    <div class="section section_video" id="section_02">
+    <div class="scroll-unique-class section section_video" id="section_02">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]Piedmont_web.mp4" />
@@ -44,13 +44,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         <p class="fade-up">
           <?php echo $Piedmont_text ?>
         </p>
-        <a href="https://dalba.co.kr/main/html.php?htmid=story/story.html" class="arrow_right fade-up" target="_blank">
+        <a href="<?= $lang == 'KO' ? 'https://dalba.co.kr/main/html.php?htmid=story/story.html' : 'https://dalba.com/pages/page-1' ?>" class="arrow_right fade-up" target="_blank">
           LEARN MORE
           <p></p>
         </a>
       </div>
     </div>
-    <div class="section section_video_B">
+    <div class="scroll-unique-class section section_video_B">
       <div class="video_main_B career pc_show">
         <video class="video" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/No.1-Vegan-PC.mp4" />
@@ -62,7 +62,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </video>
       </div>
     </div>
-    <div class="section section_video back_ef">
+    <div class="scroll-unique-class section section_video back_ef">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]White truffle_web.mp4" />
@@ -89,7 +89,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- 헤리티지 끝 -->
 
     <!-- 캠페인 시작 (섹션 05) -->
-    <div class="section section_video" id="section_05">
+    <div class="scroll-unique-class section section_video" id="section_05">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -109,7 +109,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
         </div>
       </div>
     </div>
-    <div class="section section_video">
+    <div class="scroll-unique-class section section_video">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -132,7 +132,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- 캠페인 끝 -->
 
     <!-- 브랜드 시작 (섹션 07)-->
-    <div class="section section_video" id="section_07">
+    <div class="scroll-unique-class section section_video" id="section_07">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/dalba_brand_pc.mp4" />
@@ -156,7 +156,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
     </div>
 
-    <div class="section section_video">
+    <div class="scroll-unique-class section section_video">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/veganery_pc.mp4" />
@@ -180,7 +180,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
     </div>
 
-    <div class="section section_video">
+    <div class="scroll-unique-class section section_video">
       <div class="video_main career pc_show">
         <video class="video object-left contain" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/brand/truffle_de_alba_pc.mp4" />
@@ -206,7 +206,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- 브랜드 끝 -->
 
     <!-- innovation start (섹션 08) -->
-    <div class="section section_video" id="section_08">
+    <div class="scroll-unique-class section section_video" id="section_08">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -227,7 +227,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
     </div>
 
-    <div class="section section_video">
+    <div class="scroll-unique-class section section_video">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -248,7 +248,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
     </div>
 
-    <div class="section section_video">
+    <div class="scroll-unique-class section section_video">
       <div class="gra_back"></div>
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
@@ -271,18 +271,20 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- innovation end -->
 
     <!-- 미션 시작 (섹션 11) -->
-    <div class="section section_video" id="section_11">
+    <div class="scroll-unique-class section section_video" id="section_11">
       <div class="slide02 mission" id="mission">
-        <div class="video_main career pc_show">
-          <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" data-src="./_img/common/[stage1]Mission_web.mp4" />
-          </video>
-        </div>
-        <div class="video_main career mo_show">
-          <video class="video mission-01" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" data-src="./_img/common/[stage1]Mission_mob.mp4" />
-          </video>
-        </div>
+          <div class="video_main career pc_show">
+              <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
+                             <source type="video/mp4" data-src="./_img/common/[stage1]Mission_web.mp4" />
+                  <!-- <source type="video/webm" src="./_img/common/[stage1]Career_mob_new_alpha.webm" /> -->
+              </video>
+          </div>
+          <div class="video_main career mo_show">
+              <video class="video mission-01" autoplay muted playsinline loop data-autoplay="true">
+                             <source type="video/mp4" data-src="./_img/common/[stage1]Mission_mob.mp4" />
+                  <!-- <source type="video/webm" src="./_img/common/[stage1]Career_mob_new_alpha.webm" /> -->
+              </video>
+          </div>
         <div class="text">
           <h2 class="fade-up">Mission</h2>
           <p class="fade-up">
@@ -293,16 +295,16 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- 커리어 시작 (섹션 12) -->
-    <div class="section section_video career" id="section_12">
+    <div class="scroll-unique-class section section_video career" id="section_12">
       <div class="slide03 career" id="career">
         <div class="video_main career pc_show">
           <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" data-src="./_img/common/[stage1]Career_web.mp4" />
+            <source type="video/mp4" src="./_img/common/[stage1]Career_web.mp4" />
           </video>
         </div>
         <div class="video_main career mo_show">
           <video class="video" autoplay muted playsinline loop data-autoplay="true">
-            <source type="video/mp4" data-src="./_img/common/[stage1]Career_mob.mp4" />
+            <source type="video/mp4" src="./_img/common/[stage1]Career_mob.mp4" />
           </video>
         </div>
 
@@ -322,7 +324,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
 
     <!-- 히스토리 시작 (섹션 13) -->
     <!-- <div class="section_2 section full_his" id="section_13"> -->
-    <div class="section_2 section his_section" id="section_13">
+    <div class="scroll-unique-class section_2 section his_section" id="section_13">
       <!-- pc-history start -->
       <div class="history_inner">
         <h1>History</h1>
@@ -390,7 +392,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- IR Material 시작 (섹션 14) -->
-    <div class="section section_2 IR_Material full_ir" id="section_14">
+    <div class="scroll-unique-class section section_2 IR_Material full_ir" id="section_14">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
@@ -420,7 +422,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- Announcements 시작 (섹션 15) -->
-    <div class="section section_2 Announcements full_ir " id="section_15">
+    <div class="scroll-unique-class section section_2 Announcements full_ir " id="section_15">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
@@ -450,7 +452,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- ESG section start (section 16)-->
-    <div class="section section_video esg-section" id="section_16">
+    <div class="scroll-unique-class section section_video esg-section" id="section_16">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]Environment_web.mp4" />
@@ -463,13 +465,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Environment</h2>
-        <p class="fade-up">
+        <p class="fade-up esg-p-left-padding">
           <b><?php echo $Environment_b ?></b>
           <?php echo $Environment_p ?>
         </p>
       </div>
     </div>
-    <div class="section section_video esg-section">
+    <div class="scroll-unique-class section section_video esg-section">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]Social_web.mp4" />
@@ -482,13 +484,13 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Social</h2>
-        <p class="fade-up">
+        <p class="fade-up esg-p-left-padding">
           <b><?php echo $Social_b ?></b>
           <?php echo $Social_p ?>
         </p>
       </div>
     </div>
-    <div class="section section_video esg-section">
+    <div class="scroll-unique-class section section_video esg-section">
       <div class="video_main career pc_show">
         <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">
           <source type="video/mp4" data-src="./_img/common/[stage2]Governance_web.mp4" />
@@ -501,7 +503,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
       </div>
       <div class="text B text_ani">
         <h2 class="fade-up">Governance</h2>
-        <p class="fade-up">
+        <p class="fade-up esg-p-left-padding">
           <b><?php echo $Governance_b ?></b>
           <?php echo $Governance_p ?>
         </p>
@@ -510,7 +512,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     <!-- ESG section end -->
 
     <!-- Newsroom start (section 19) -->
-    <div class="section section_2 Newsroom full_ir" id="section_19">
+    <div class="scroll-unique-class section section_2 Newsroom full_ir" id="section_19">
 
       <!-- #### todo: mo에선 3개 게시글 리스트만 노출되게 #### -->
       <div class="ir_inner">
@@ -539,7 +541,7 @@ $langParam = $lang ? "&lang=" . urlencode($lang) : "";
     </div>
 
     <!-- Shareholder's club (section 20) -->
-    <div class="section section_video" id="section_20">
+    <div class="scroll-unique-class section section_video" id="section_20">
       <div class="club_inner">
         <div class="video_main pc_show">
           <video class="video object-left" autoplay muted playsinline loop data-autoplay="true">

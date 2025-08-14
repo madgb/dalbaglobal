@@ -647,14 +647,21 @@
   }
   .section_video .text {
     left: 20px;
-    top: 60%;
-    transform: translateY(0);
+    top: 80%;
+    transform: translateY(-50%);
     gap: 16px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
   }
   .section_video .text.B {
     left: 0;
-    top: 55%;
+    top: 70%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .section_video .text h2 {
     font-size: 32px;
@@ -883,5 +890,16 @@
   }
   .global_inner.china {
     background: url(../_img/common/global_back_china_mo.png) no-repeat center center / contain;
+  }
+
+  .club_inner .text_box {
+    top: 65%;
+    transform: translateY(-50%);
+    left: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
   }
 }
